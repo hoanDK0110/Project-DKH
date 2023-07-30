@@ -1,0 +1,4808 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{xcolor}
+\end_preamble
+\use_default_options true
+\begin_modules
+fix-cm
+fixltx2e
+graphicboxes
+\end_modules
+\maintain_unincluded_children false
+\language vietnamese
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement !h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "inputencoding={utf8}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+ĐẠI HỌC BÁCH KHOA HÀ NỘI 
+\end_layout
+
+\begin_layout Standard
+TRƯỜNG ĐIỆN – ĐIỆN TỬ 
+\end_layout
+
+\begin_layout Standard
+ĐỒ ÁN TỐT NGHIỆP 
+\end_layout
+
+\begin_layout Standard
+ĐỀ TÀI:
+\end_layout
+
+\begin_layout Standard
+Giảng viên hướng dẫn: 
+\end_layout
+
+\begin_layout Standard
+Sinh viên thực hiện: 
+\end_layout
+
+\begin_layout Standard
+Đỗ Kim Hoàn 
+\end_layout
+
+\begin_layout Standard
+MSSV: 20192862 
+\end_layout
+
+\begin_layout Section
+Giới thiệu.
+\end_layout
+
+\begin_layout Subsection
+Ảo hóa mạng.
+\end_layout
+
+\begin_layout Standard
+Ảo hóa mạng là một công nghệ đột phá cho phép tạo ra mạng logic ảo trên
+ cơ sở hạ tầng mạng vật lý.
+ Công nghệ này cho phép chia sẻ và tạo ra nhiều mạng ảo độc lập trên cùng
+ một hạ tầng vật lý, mỗi mạng ảo có thể hoạt động như một mạng độc lập với
+ các tài nguyên và chính sách riêng biệt.
+ Ảo hóa mạng được xem như một công nghệ hỗ trợ cho tương lai của Internet,
+ vượt qua giới hạn hiện tại của nó đối với các thay đổi kiến trúc.
+\end_layout
+
+\begin_layout Standard
+Các lợi ích của ảo hóa mạng bao gồm tính linh hoạt, cho phép tạo và quản
+ lý nhiều mạng logic độc lập trên cùng một hạ tầng vật lý, giúp tối ưu hóa
+ việc sử dụng tài nguyên mạng.
+ Nó cũng cung cấp cô lập và an ninh giữa các mạng logic để đảm bảo tính
+ riêng tư và an ninh của từng mạng, ngăn chặn sự xâm nhập và truy cập trái
+ phép giữa chúng.
+ Ảo hóa mạng cũng dễ dàng mở rộng và mở rộng mạng theo nhu cầu, mà không
+ cần thay đổi cơ sở hạ tầng vật lý, cùng với việc cung cấp giao diện quản
+ lý trung tâm để giám sát và quản lý các mạng ảo một cách hiệu quả.
+\end_layout
+
+\begin_layout Standard
+Trong môi trường ảo hóa mạng, việc ánh xạ các mạng ảo vào cơ sở hạ tầng
+ mạng vật lý được gọi là Virtual Network Embedding (VNE).
+ Đây là một khái niệm quan trọng trong lĩnh vực ảo hóa mạng, đặc biệt là
+ khi nhiều mạng ảo tồn tại và hoạt động trên cùng một cơ sở hạ tầng vật
+ lý.
+ VNE có trách nhiệm phân bổ tài nguyên mạng cần thiết một cách hiệu quả
+ để hỗ trợ yêu cầu của các mạng ảo.
+\end_layout
+
+\begin_layout Standard
+Trước đây, mạng vật lý được thiết kế và triển khai để kết nối các thiết
+ bị và tạo điều kiện cho việc truyền thông.
+ Tuy nhiên, với sự phát triển của công nghệ ảo hóa, như đám mây tính và
+ mạng quản lý bằng phần mềm (SDN), khái niệm mạng ảo đã xuất hiện.
+ Mạng ảo là các trừu tượng hóa logic của mạng vật lý, cho phép tạo ra môi
+ trường mạng cách ly với cấu hình và chính sách riêng.
+\end_layout
+
+\begin_layout Standard
+Để giải quyết thách thức ánh xạ các mạng ảo vào cơ sở hạ tầng mạng vật lý
+ một cách hiệu quả, Virtual Network Embedding giúp tối ưu hóa việc sử dụng
+ tài nguyên và đáp ứng các ràng buộc khác nhau.
+ Mục tiêu là phân bổ một cách hiệu quả các tài nguyên vật lý như liên kết,
+ switch, router và băng thông để đáp ứng yêu cầu của các mạng ảo, đồng thời
+ đảm bảo cách ly và yêu cầu hiệu suất của chúng.
+ Để giải quyết vấn đề này, phương pháp học tăng cường được sử dụng để nhúng
+ mạng ảo, giúp tự động tối ưu hóa quyết định ánh xạ nút.
+\end_layout
+
+\begin_layout Standard
+Ảo hóa mạng được áp dụng rộng rãi trong các môi trường đám mây, trung tâm
+ dữ liệu và mạng ảo hóa.
+ Nó cung cấp một phương pháp linh hoạt và hiệu quả để quản lý và sử dụng
+ tài nguyên mạng, tạo điều kiện cho triển khai và vận hành ứng dụng và dịch
+ vụ mạng một cách tối ưu.
+ Công nghệ ảo hóa mạng sẽ tiếp tục đóng vai trò quan trọng trong việc phát
+ triển và cải thiện hệ thống mạng trong tương lai.
+\end_layout
+
+\begin_layout Subsection
+Giới thiệu Service Function Chain - SFC
+\end_layout
+
+\begin_layout Standard
+Service Function Chain (SFC) là một phương pháp tiên tiến và ấn tượng trong
+ lĩnh vực mạng máy tính và ảo hóa mạng, đóng vai trò quan trọng trong việc
+ cải thiện hiệu suất và linh hoạt của mạng.
+ Trong thời đại của công nghệ thông tin ngày nay, các mạng truyền thông
+ phải đối mặt với sự phức tạp ngày càng gia tăng của ứng dụng và dịch vụ,
+ từ video trực tuyến và hội nghị truyền hình cho đến Internet of Things
+ (IoT) và các ứng dụng cơ chế thời gian thực.
+\end_layout
+
+\begin_layout Standard
+Trước khi SFC ra đời, các hàm dịch vụ mạng như tường lửa, kiểm tra xác thực,
+ cân bằng tải và giám sát đều được triển khai dưới dạng các hộp đen riêng
+ biệt.
+ Các hộp đen này làm việc độc lập và không có cơ chế tương tác giữa chúng,
+ dẫn đến việc phải triển khai nhiều hộp đen trên toàn bộ mạng, gây ra lãng
+ phí tài nguyên và làm tăng độ phức tạp trong việc quản lý mạng.
+ Vào lúc này, SFC đã xuất hiện như một giải pháp thú vị và tiềm năng.
+\end_layout
+
+\begin_layout Standard
+SFC cho phép xây dựng chuỗi các hàm dịch vụ mạng linh hoạt và hiệu quả,
+ tạo thành một quy trình xử lý đa chức năng cho các gói tin mạng khi chúng
+ di chuyển qua mạng.
+ Cụ thể, SFC xác định một loạt các hàm dịch vụ mạng cần được thực hiện cho
+ mỗi gói tin cụ thể dựa trên các yêu cầu của ứng dụng và chính sách mạng.
+ Khi một gói tin mạng nhập vào mạng, nó sẽ thông qua chuỗi SFC đã được xác
+ định trước đó.
+ Tại mỗi điểm dừng (service function), gói tin sẽ được xử lý bởi hàm dịch
+ vụ tương ứng.
+ Khi hoàn thành, gói tin sẽ tiếp tục di chuyển đến điểm dừng tiếp theo trong
+ chuỗi SFC cho đến khi nó hoàn tất toàn bộ quá trình xử lý.
+ Điều này giúp đảm bảo rằng mỗi gói tin được xử lý đúng theo yêu cầu của
+ ứng dụng và chính sách, từ đó cải thiện hiệu suất và bảo mật của mạng.
+\end_layout
+
+\begin_layout Standard
+Một trong những ưu điểm nổi bật của SFC là khả năng linh hoạt trong triển
+ khai và quản lý.
+ Với SFC, việc triển khai các dịch vụ mạng phức tạp trở nên dễ dàng hơn
+ và tối ưu hóa tài nguyên mạng.
+ Thay vì triển khai tất cả các hàm dịch vụ trên tất cả các địa điểm trong
+ mạng, SFC cho phép chọn lọc và chỉ triển khai những hàm dịch vụ cần thiết
+ cho từng luồng dữ liệu cụ thể.
+ Điều này giúp tiết kiệm tài nguyên và làm giảm tải công việc cho quản trị
+ viên mạng.
+\end_layout
+
+\begin_layout Standard
+SFC cũng đóng vai trò quan trọng trong việc cung cấp các dịch vụ mạng chất
+ lượng cao.
+ Bằng cách triển khai chuỗi các hàm dịch vụ tối ưu, mạng có thể đảm bảo
+ rằng các ứng dụng và dịch vụ được xử lý một cách hiệu quả và không gặp
+ phải các vấn đề về hiệu suất hoặc độ trễ.
+ Điều này đáp ứng yêu cầu ngày càng cao về đáp ứng thời gian thực và hiệu
+ suất ổn định cho các ứng dụng mạng.
+\end_layout
+
+\begin_layout Standard
+Tóm lại, Service Function Chain (SFC) là một khái niệm tiên tiến và đáng
+ chú ý trong ảo hóa mạng và mạng chức năng thông minh.
+ Nó đóng vai trò quan trọng trong việc cải thiện hiệu suất mạng, linh hoạt
+ trong triển khai và quản lý, tối ưu hóa tài nguyên mạng và cung cấp các
+ dịch vụ mạng chất lượng cao.
+ SFC đem lại sự hiệu quả và tiện lợi trong việc triển khai các dịch vụ mạng
+ phức tạp và giúp mạng vận hành ổn định, đáp ứng nhanh chóng các yêu cầu
+ của người dùng và doanh nghiệp.
+\end_layout
+
+\begin_layout Subsection
+Mục đích nghiên cứu.
+\end_layout
+
+\begin_layout Standard
+Mục đích chính của nghiên cứu này là tạo ra một thuật toán ánh xạ chuỗi
+ dịch vụ (SFC) dựa trên học tăng cường, với mục tiêu giải quyết các vấn
+ đề phức tạp liên quan đến triển khai và quản lý mạng trong môi trường ảo
+ hóa và ảo hóa mạng.
+ Cụ thể, nghiên cứu tập trung vào việc chọn các nút máy chủ phần cứng phù
+ hợp để triển khai và khởi tạo các Virtualized Network Function (VNF), đồng
+ thời hoàn thành ánh xạ SFC từ chế độ xem logic kết nối VNF đã đặt hàng
+ với bản đồ cấu trúc liên kết vật lý thực tế.
+\end_layout
+
+\begin_layout Standard
+Một trong những mục tiêu chính của ánh xạ SFC là đảm bảo sử dụng hợp lý
+ tài nguyên mạng và chất lượng dịch vụ (QoS) của SFC.
+ Điều này đòi hỏi việc nghiên cứu và phát triển thuật toán ánh xạ mang tính
+ đột phá, có khả năng tối ưu hóa việc triển khai các chuỗi dịch vụ mạng
+ một cách hiệu quả.
+\end_layout
+
+\begin_layout Standard
+Nhìn chung, bài báo này đề xuất một thuật toán ánh xạ chuỗi dịch vụ dựa
+ trên học tăng cường, điều này có ý nghĩa quan trọng vì có ba ưu điểm nổi
+ bật.Thứ nhất, thuật toán giải quyết một cách hiệu quả việc tìm ra giải pháp
+ tối ưu và hiệu quả.
+ Điều này cho phép thuật toán khám phá các giải pháp tối ưu, đồng thời giảm
+ độ phức tạp thời gian thông qua tối ưu hóa.
+ Thứ hai, thuật toán có khả năng thực hiện ánh xạ tài nguyên trong điều
+ kiện trực tuyến.
+ Điều này nghĩa là thuật toán có thể thu thập lượng lớn thông tin thông
+ qua học máy và thực hiện việc học và cập nhật một cách linh hoạt, giúp
+ cải thiện quá trình quản lý mạng.
+ Thứ ba, thuật toán có khả năng áp dụng trong mạng vật lý cơ sở quy mô lớn
+ và hoạt động tốt.
+ Điều này cho thấy tính linh hoạt và khả năng mở rộng của thuật toán trong
+ môi trường mạng thực tế.
+\end_layout
+
+\begin_layout Standard
+Nghiên cứu hiện tại về thuật toán ánh xạ chuỗi dịch vụ thường tập trung
+ vào việc giảm thiểu độ trễ mạng, tối đa hóa việc sử dụng tài nguyên, giảm
+ thiểu chi phí và tiêu thụ năng lượng.
+ Các nghiên cứu trước đó đã thực hiện nhiều phương pháp tối ưu hóa và heuristic
+ để giải quyết các vấn đề này.
+ Tuy nhiên, một số nghiên cứu này chỉ xem xét một khía cạnh cụ thể của QoS
+ hoặc thiết lập mô hình ILP, dẫn đến độ phức tạp cao và khả năng áp dụng
+ trong các mạng lớn hạn chế.
+ Việc sử dụng học tăng cường trong thuật toán ánh xạ SFC là một bước tiến
+ quan trọng để tận dụng trạng thái hệ thống và phản hồi từ môi trường, đồng
+ thời đưa ra ánh xạ tối ưu hơn trong các tình huống động và điều kiện trực
+ tuyến.
+\end_layout
+
+\begin_layout Standard
+Tóm lại, nghiên cứu này đề xuất một giải pháp mới và tiên tiến trong việc
+ giải quyết vấn đề ánh xạ chuỗi dịch vụ.
+ Bằng cách kết hợp học tăng cường và tối ưu hóa, thuật toán này hứa hẹn
+ đem lại những lợi ích to lớn cho việc triển khai và quản lý mạng trong
+ môi trường ảo hóa và ảo hóa mạng.
+\end_layout
+
+\begin_layout Section
+Cơ sở lý thuyết.
+\end_layout
+
+\begin_layout Standard
+Trong thời đại của công nghệ thông tin ngày nay, mạng truyền thông đang
+ phải đối mặt với sự phức tạp ngày càng gia tăng của ứng dụng và dịch vụ.
+ Từ video trực tuyến và hội nghị truyền hình đến Internet of Things (IoT)
+ và các ứng dụng thời gian thực, mạng đang phải đáp ứng yêu cầu về hiệu
+ suất cao, độ tin cậy và bảo mật.
+\end_layout
+
+\begin_layout Standard
+Trước khi Service Function Chain (SFC) xuất hiện, các hàm dịch vụ mạng như
+ tường lửa, kiểm tra xác thực, cân bằng tải và giám sát thường được triển
+ khai dưới dạng các hộp đen riêng biệt.
+ Các hộp đen này hoạt động độc lập và không có cơ chế tương tác giữa chúng,
+ dẫn đến việc phải triển khai nhiều hộp đen trên toàn bộ mạng, gây lãng
+ phí tài nguyên và làm tăng độ phức tạp trong việc quản lý mạng.
+ Điều này dẫn đến nhu cầu cấp thiết cho một phương pháp mới để xử lý các
+ dịch vụ mạng phức tạp một cách hiệu quả và linh hoạt hơn.
+\end_layout
+
+\begin_layout Standard
+SFC đã xuất hiện như một giải pháp thú vị và tiềm năng trong lĩnh vực mạng
+ máy tính và ảo hóa mạng.
+ Nó cho phép xây dựng chuỗi các hàm dịch vụ mạng linh hoạt và hiệu quả,
+ tạo thành một quy trình xử lý đa chức năng cho các gói tin mạng khi chúng
+ di chuyển qua mạng.
+ Cụ thể, SFC xác định một loạt các hàm dịch vụ mạng cần được thực hiện cho
+ mỗi gói tin cụ thể dựa trên các yêu cầu của ứng dụng và chính sách mạng.
+\end_layout
+
+\begin_layout Standard
+Khi một gói tin mạng nhập vào mạng, nó sẽ thông qua chuỗi SFC đã được xác
+ định trước đó.
+ Tại mỗi điểm dừng (service function), gói tin sẽ được xử lý bởi hàm dịch
+ vụ tương ứng.
+ Khi hoàn thành, gói tin sẽ tiếp tục di chuyển đến điểm dừng tiếp theo trong
+ chuỗi SFC cho đến khi nó hoàn tất toàn bộ quá trình xử lý.
+ Điều này giúp đảm bảo rằng mỗi gói tin được xử lý đúng theo yêu cầu của
+ ứng dụng và chính sách, từ đó cải thiện hiệu suất và bảo mật của mạng.
+\end_layout
+
+\begin_layout Standard
+Một trong những ưu điểm nổi bật của SFC là khả năng linh hoạt trong triển
+ khai và quản lý.
+ Trước đây, việc triển khai các dịch vụ mạng phức tạp thường đòi hỏi triển
+ khai tất cả các hàm dịch vụ trên tất cả các địa điểm trong mạng.
+ Nhưng với SFC, ta có thể chọn lọc và chỉ triển khai những hàm dịch vụ cần
+ thiết cho từng luồng dữ liệu cụ thể.
+ Điều này giúp tiết kiệm tài nguyên và làm giảm tải công việc cho quản trị
+ viên mạng.
+\end_layout
+
+\begin_layout Standard
+Nhu cầu ngày càng cao về đáp ứng thời gian thực và hiệu suất ổn định cho
+ các ứng dụng mạng đã thúc đẩy sự phát triển của các thuật toán ánh xạ chuỗi
+ dịch vụ nhằm tối ưu hóa việc triển khai các chuỗi dịch vụ mạng.
+ Trong bài báo này, chúng tôi đề xuất một thuật toán ánh xạ chuỗi dịch vụ
+ dựa trên học tăng cường.
+\end_layout
+
+\begin_layout Standard
+Thuật toán này là sự kết hợp thông minh giữa việc tối ưu hóa và học tăng
+ cường, cho phép nghiên cứu và tìm hiểu các trạng thái hệ thống và phản
+ hồi từ môi trường.
+ Dựa trên thông tin này, thuật toán xác định vị trí triển khai thực tế của
+ các nút chức năng ảo trong SFC.
+\end_layout
+
+\begin_layout Standard
+Điểm nổi bật của thuật toán này bao gồm việc thỏa hiệp giữa việc tìm ra
+ giải pháp tối ưu và hiệu quả, cho phép khám phá các giải pháp tối ưu trong
+ khi giảm độ phức tạp thời gian thông qua tối
+\end_layout
+
+\begin_layout Subsection
+Mô hình mạng.
+\end_layout
+
+\begin_layout Standard
+Mạng vật lý được mô hình hóa như một đồ thị vô hướng có trọng số 
+\begin_inset Formula $G^{S}=(N^{S},L^{S})$
+\end_inset
+
+ trong đó 
+\begin_inset Formula $N^{S}$
+\end_inset
+
+ là biểu diễn khả năng đáp ứng của nút máy chủ, 
+\begin_inset Formula $n^{s}$
+\end_inset
+
+là đại diện cho một nút đó, tập hợp liên kết vật lý giữa các nút vật lý
+ được biểu thị bằng 
+\begin_inset Formula $L^{S}$
+\end_inset
+
+và một liên kết được đại diện bởi 
+\begin_inset Formula $l_{j}^{S}$
+\end_inset
+
+ hoặc 
+\begin_inset Formula $(n_{i}^{s},n_{j}^{s})$
+\end_inset
+
+.
+ Với mỗi nút mạng, ta giả định rằng khả năng xử lý yêu cầu (tài nguyên)
+ của nút đó là 
+\begin_inset Formula $C(n^{s})$
+\end_inset
+
+.
+ Các VNF được giả định là được triển khai trên các máy ảo trong các nút
+ chức năng trong khi các nút chuyển đổi chỉ được sử dụng để ánh xạ đầu vào
+ và đầu ra của từng yêu cầu SFC.
+\end_layout
+
+\begin_layout Standard
+Mỗi yêu cầu SFC bao gồm một tập hợp các endpoints
+\begin_inset space ~
+\end_inset
+
+ chuỗi các chức năng dịch vụ, 
+\begin_inset Formula $s_{k}=\{v_{ks},v_{kt},(c_{k1},c_{k2},...,c_{km})\text{\}}$
+\end_inset
+
+, trong đó 
+\begin_inset Formula $(c_{k1},c_{k2},...,c_{km})$
+\end_inset
+
+ lần lượt là các chức năng dịch vụ cần được chuyển từ nút vật lý nguồn 
+\begin_inset Formula $v_{ks}$
+\end_inset
+
+ đến nút vật lý đích 
+\begin_inset Formula $v_{kt}$
+\end_inset
+
+và 
+\begin_inset Formula $m$
+\end_inset
+
+ là số yêu cầu chức năng tối đa.
+ Sau khi thuật toán ánh xạ hoàn thành việc ánh xạ chức năng SFC, một chuỗi
+ chức năng logic được hình thành, được gọi là 
+\begin_inset Formula $f_{k}=\{f_{k1},f_{k2},...,f_{km}\}$
+\end_inset
+
+, nó có thể biểu diễn bởi đồ thị có hướng có trọng số 
+\begin_inset Formula $G^{V}=(N^{V},L^{V})$
+\end_inset
+
+, trong đó 
+\begin_inset Formula $N^{V}$
+\end_inset
+
+được biểu diễn cho một tập hợp các nút logic VNF, và 
+\begin_inset Formula $L^{V}$
+\end_inset
+
+được biểu diễn cho tập liên kết ảo, đó là mối quan hệ kết nối logic.
+ Tất cả các ký hiệu và ý nghĩa của chúng được liệt kê bên dưới, như trong
+ bảng 
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Thông số mạng vật lý
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="20" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Ký hiệu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Mô tả
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tập hợp các nút vật lý của máy chủ.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tập hợp các liên kết của máy chủ.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n_{i}^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nút vật lý thứ 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{i}^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tài nguyên của nút vật lý thứ 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{i}^{v}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tài nguyên của nút VNF thứ 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $l_{j}^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Liên kết vật lý thứ 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(𝑛_{i}^{s},𝑛_{j}^{s})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Liên kết vật lý giữa nút thứ 
+\begin_inset Formula $i$
+\end_inset
+
+ và nút thứ
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C(n_{i}^{s})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Liên kết vật lý giữa nút thứ 
+\begin_inset Formula $i$
+\end_inset
+
+ và nút thứ 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R(n_{i}^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Số vCPU hiện tại còn lại của nút vật lý 
+\begin_inset Formula $i$
+\end_inset
+
+ của máy chủ.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $D(n_{i}^{s},n_{j}^{s})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Độ trễ truyền giữa các nút vật lý 
+\begin_inset Formula $i$
+\end_inset
+
+ và
+\begin_inset Formula $j$
+\end_inset
+
+ của máy chủ.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tập hợp các VNF instance
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tập hợp các yêu cầu của SFC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $s_{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yều cầu thứ k trong tập yêu cầu của SFC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c_{km}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nút thứ m trong chuỗi SFC
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chuỗi chức năng logic tương ứng với việc triển khai chuỗi.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{km}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nút vật lý tương ứng với lần triển khai VNF thứ m của chuỗi.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B(l_{i}^{s})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Băng thông của liên kết vật lý
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{ij}^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Băng thông liên kết vật lý giữa nút 
+\begin_inset Formula $i$
+\end_inset
+
+ và nút 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{ij}^{v}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Băng thông liên kết giữa nút 
+\begin_inset Formula $i$
+\end_inset
+
+ và nút 
+\begin_inset Formula $j$
+\end_inset
+
+ của VNF
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Các biến của mô hình
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Biến
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ý nghĩa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ϕ_{i}^{v}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trạng thái đặt VNF thứ 
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ϕ_{ij}^{v\text{w}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trạng thái đặt liên kết logic 
+\begin_inset Formula $v\text{w}$
+\end_inset
+
+ tại liên kết vật lí 
+\begin_inset Formula $ij$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Các phương pháp triển khai.
+\end_layout
+
+\begin_layout Standard
+Trong bài toán Service Function Chain (SFC), để tối ưu hóa việc triển khai
+ và quản lý chuỗi dịch vụ mạng trong mạng vật lý, có nhiều phương pháp và
+ thuật toán được sử dụng.
+ Các phương pháp này cung cấp những cách tiếp cận đa dạng để giải quyết
+ bài toán SFC với các yêu cầu và ràng buộc khác nhau.
+\end_layout
+
+\begin_layout Standard
+Phương pháp đầu tiên là Tối ưu hóa nguyên tố (Integer Linear Programming
+ - ILP).
+ Đây là một phương pháp toán học mạnh mẽ được sử dụng để tối ưu hóa bài
+ toán có ràng buộc nguyên tố.
+ Trong bài toán SFC, ILP có thể được áp dụng để xác định cấu trúc và thứ
+ tự triển khai các chức năng mạng trong chuỗi SFC, dựa trên các ràng buộc
+ về tài nguyên mạng và yêu cầu của SFC.
+ Tuy nhiên, ILP có thể trở nên khó khăn và tốn nhiều thời gian tính toán
+ khi mạng lớn và có nhiều yêu cầu phức tạp.
+\end_layout
+
+\begin_layout Standard
+Phương pháp thứ hai là Tối ưu hóa liên tục (Continuous Optimization).
+ Phương pháp này thường áp dụng cho các bài toán tối ưu hóa khi các biến
+ là các số thực.
+ Trong bài toán SFC, tối ưu hóa liên tục có thể được sử dụng để tìm giải
+ pháp gần tối ưu cho việc triển khai chuỗi dịch vụ mạng trên mạng vật lý.
+ Tuy không đảm bảo tìm ra giải pháp tối ưu chính xác, nhưng phương pháp
+ này thường nhanh hơn ILP và phù hợp với các mạng lớn và phức tạp.
+\end_layout
+
+\begin_layout Standard
+Tiếp theo, thuật toán chia và chinh phương (Branch and Bound) là một phương
+ pháp tối ưu hóa tiếp cận mạnh mẽ trong việc tìm giải pháp tối ưu cho bài
+ toán tối ưu hóa nguyên tố.
+ Trong bài toán SFC, thuật toán này có thể được áp dụng để tìm đường đi
+ tối ưu giữa các chức năng mạng trong chuỗi SFC.
+ Phương pháp này sẽ liệt kê các giải pháp tiềm năng và từ đó tiếp tục chia
+ nhỏ các tập con để tìm giải pháp tối ưu.
+\end_layout
+
+\begin_layout Standard
+Ngoài ra, các thuật toán tiến hóa (Evolutionary Algorithms) cũng được sử
+ dụng trong bài toán SFC.
+ Tiến hóa là phương pháp tối ưu hóa dựa trên các quy tắc tiến hóa trong
+ tự nhiên, như lai ghép và đột biến.
+ Các thuật toán tiến hóa có thể giúp tìm giải pháp gần tối ưu trong thời
+ gian nhanh, và thích hợp cho những bài toán lớn và phức tạp.
+\end_layout
+
+\begin_layout Standard
+Các thuật toán heuristics cũng được sử dụng trong bài toán SFC.
+ Heuristics là các phương pháp tiếp cận đơn giản và thường không chính xác,
+ nhưng có thể tìm giải pháp gần tối ưu trong thời gian nhanh.
+ Các thuật toán heuristics thường được thiết kế để giải quyết các bài toán
+ phức tạp và lớn, và cung cấp giải pháp chấp nhận được trong nhiều trường
+ hợp thực tế.
+\end_layout
+
+\begin_layout Standard
+Tùy thuộc vào độ phức tạp và yêu cầu cụ thể của mạng, người triển khai và
+ quản lý có thể sử dụng một hoặc nhiều phương pháp trên hoặc kết hợp chúng
+ để đạt được giải pháp tối ưu cho bài toán Service Function Chain.
+\end_layout
+
+\begin_layout Section
+Vấn đề và thách thức.
+\end_layout
+
+\begin_layout Subsection
+Phân tích vấn đề
+\end_layout
+
+\begin_layout Standard
+Trong lĩnh vực SFC embedding (triển khai chuỗi dịch vụ mạng), các vấn đề
+ và thách thức đối diện là rất phong phú và phức tạp.
+ Một trong những thách thức chính là tối ưu hóa tài nguyên mạng.
+ Khi triển khai chuỗi dịch vụ mạng, việc sử dụng tài nguyên mạng như băng
+ thông, CPU và bộ nhớ đòi hỏi phải được tối ưu hóa để đảm bảo mạng hoạt
+ động hiệu quả và đáp ứng đúng các yêu cầu của chuỗi dịch vụ mạng.
+ Điều này thường đòi hỏi các thuật toán tối ưu hóa và quản lý tài nguyên
+ mạng thông minh để định vị và phân phối các chức năng mạng vào vị trí phù
+ hợp trong mạng vật lý.
+\end_layout
+
+\begin_layout Standard
+Một vấn đề quan trọng khác là tối ưu hóa đáp ứng thời gian thực.
+ Trong mạng, có những chuỗi dịch vụ mạng yêu cầu đáp ứng thời gian thực
+ để đảm bảo tính tin cậy và hiệu quả trong cung cấp dịch vụ.
+ Tuy nhiên, việc triển khai chuỗi dịch vụ mạng có thể làm gia tăng thời
+ gian xử lý và gây trễ trong mạng, làm ảnh hưởng đến đáp ứng thời gian thực.
+ Do đó, việc tối ưu hóa đáp ứng thời gian thực là một trong những thách
+ thức quan trọng mà các nhà nghiên cứu và kỹ sư mạng phải đối mặt.
+\end_layout
+
+\begin_layout Standard
+Khả năng quản lý đa dạng và phức tạp của mạng là một vấn đề khác cần được
+ giải quyết.
+ Mạng ngày càng phát triển và đa dạng, bao gồm nhiều loại dịch vụ và ứng
+ dụng.
+ Trong khi một số dịch vụ đòi hỏi đáp ứng thời gian thực và tài nguyên cao,
+ thì một số khác có yêu cầu thấp hơn.
+ Điều này đòi hỏi các giải pháp linh hoạt và quản lý thông minh để triển
+ khai và quản lý chuỗi dịch vụ mạng trong mạng vật lý.
+ Sự đa dạng và phức tạp này làm cho việc tối ưu hóa SFC embedding trở nên
+ thách thức, vì có nhiều biến số và ràng buộc phải xem xét.
+\end_layout
+
+\begin_layout Standard
+Một vấn đề khác là bảo mật và an ninh của chuỗi dịch vụ mạng.
+ Khi triển khai chuỗi dịch vụ mạng, các chức năng mạng thường được triển
+ khai ở nhiều vị trí khác nhau trong mạng.
+ Điều này tạo ra các điểm tiếp xúc tiềm năng cho việc tấn công và xâm nhập
+ vào hệ thống.
+ Vì vậy, việc đảm bảo tính bảo mật và an ninh của chuỗi dịch vụ mạng là
+ rất quan trọng để bảo vệ dữ liệu và người dùng trên mạng.
+\end_layout
+
+\begin_layout Standard
+Ngoài ra, việc triển khai chuỗi dịch vụ mạng cũng đối mặt với thách thức
+ của quy mô.
+ Mạng ngày càng phát triển lớn và phức tạp, do đó việc tối ưu hóa SFC embedding
+ cho mạng lớn là một vấn đề phức tạp.
+ Các phương pháp và thuật toán cần được phát triển để xử lý quy mô lớn này
+ một cách hiệu quả và hiệu quả.
+\end_layout
+
+\begin_layout Standard
+Trong tổng quan, SFC embedding là một lĩnh vực nghiên cứu đầy hứa hẹn và
+ cũng thách thức.
+ Các vấn đề và thách thức phức tạp, như tối ưu hóa tài nguyên mạng, đáp
+ ứng thời gian thực, quản lý đa dạng và phức tạp, bảo mật và an ninh, và
+ quy mô, đòi hỏi các nhà nghiên cứu và kỹ sư mạng phải tiếp tục nghiên cứu
+ và phát triển các giải pháp và công nghệ tiên tiến để đáp ứng các yêu cầu
+ ngày càng cao của mạng hiện đại.
+\end_layout
+
+\begin_layout Subsection
+Các ràng buộc trong bài toán SFC embedding
+\end_layout
+
+\begin_layout Standard
+Với mô hình mạng nêu trên, ta đã toán học hóa các dữ liệu đầu vào và đầu
+ ra của bài toán.
+ Cụ thể:
+\end_layout
+
+\begin_layout Standard
+Đầu vào (input):
+\end_layout
+
+\begin_layout Itemize
+Đồ thị chuỗi dịch vụ (SFC): 
+\begin_inset Formula $G^{V}=(N^{V},L^{V})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Đồ thị mạng vật lí (PHY): 
+\begin_inset Formula $G^{S}=(N^{S},L^{S})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Đầu ra (output): 
+\end_layout
+
+\begin_layout Itemize
+Vị trí đặt các VNF trên nút mạng
+\end_layout
+
+\begin_layout Standard
+Bài toán SFC embedding (triển khai chuỗi dịch vụ mạng) đặt ra mục tiêu tối
+ ưu hóa việc triển khai chuỗi các VNF (Virtualized Network Function) trên
+ mạng vật lý sao cho đáp ứng được các yêu cầu về tài nguyên và chất lượng
+ dịch vụ.
+ Trong quá trình triển khai, một VNF chỉ có thể được đặt vào một nút vật
+ lý nào đó nếu nút đó đáp ứng đủ tài nguyên cần thiết cho VNF.
+ Ràng buộc về tài nguyên tối thiểu đảm bảo rằng nếu lượng tài nguyên sẵn
+ có của nút vật lý ít hơn lượng tài nguyên mà VNF yêu cầu, thì việc triển
+ khai VNF trên nút đó là không khả thi.
+ Ngoài ra, một nút vật lý có thể đặt nhiều VNF khác nhau, nhưng tổng lượng
+ tài nguyên yêu cầu của tất cả các VNF trên nút đó phải được kiểm soát.
+ Điều này đảm bảo rằng nút vật lý không quá tải và có thể đáp ứng đủ tài
+ nguyên cho tất cả các VNF được triển khai trên nó.
+ Ràng buộc về tài nguyên tối đa đảm bảo rằng việc triển khai nhiều VNF trên
+ cùng một nút vật lý được thực hiện một cách cân nhắc và không gây ảnh hưởng
+ tiêu cực đến hiệu suất và chất lượng dịch vụ của từng VNF.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sum_{v\in N^{V}}ϕ_{i}^{v}.c^{v}\leq c^{s}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thứ hai, việc đặt một liên kết logic (logical link) trên một liên kết vật
+ lý (physical link) yêu cầu liên kết vật lý đó có đủ khả năng (bandwidth)
+ để đáp ứng yêu cầu của liên kết logic.
+ Cụ thể, nếu yêu cầu băng thông của liên kết logic lớn hơn khả năng của
+ liên kết vật lý, việc triển khai liên kết logic trên liên kết vật lý đó
+ sẽ không khả thi.
+ Một liên kết vật lý có thể chứa nhiều liên kết logic khác nhau, nhưng tổng
+ yêu cầu băng thông của tất cả các liên kết logic trên liên kết vật lý đó
+ không được vượt quá khả năng tối đa của liên kết vật lý.
+ Điều này đảm bảo rằng liên kết vật lý không bị quá tải và có thể đáp ứng
+ đủ băng thông cho tất cả các liên kết logic trên nó.
+ Các ràng buộc về khả năng của liên kết vật lý trong SFC embedding giúp
+ đảm bảo tính khả thi và hiệu quả của việc triển khai chuỗi dịch vụ mạng
+ trên mạng vật lý.
+ Việc quản lý và phân bổ khả năng băng thông một cách hiệu quả giữa các
+ liên kết logic và liên kết vật lý là một trong những thách thức quan trọng
+ trong lĩnh vực này.
+ Để đảm bảo mạng hoạt động ổn định và đáp ứng được yêu cầu của SFC, cần
+ áp dụng các thuật toán tối ưu hóa và phương pháp phân bổ tài nguyên thông
+ minh để đạt được việc triển khai SFC một cách hiệu quả trên mạng vật lý.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sum_{v\text{w\ensuremath{\in L^{V}}}}\phi_{ij}^{vw}.b_{ij}^{v}\leq b_{ij}^{s}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thứ ba, trong thực tế, việc đặt nhiều VNF của cùng một chuỗi dịch vụ mạng
+ (SFC) lên một nút mạng duy nhất không được thực hiện quá phổ biến, và lý
+ do bạn đã nêu là một trong những nguyên nhân chính.
+ Việc đặt nhiều VNF của cùng một SFC lên cùng một nút mạng sẽ làm gia tăng
+ rủi ro về mất mát dịch vụ khi xảy ra sự cố với nút mạng đó.
+ Khi đặt nhiều VNF cùng một SFC trên một nút mạng, nếu nút mạng đó gặp sự
+ cố và ngắt kết nối khỏi mạng, tất cả các VNF trong chuỗi dịch vụ đó sẽ
+ bị ảnh hưởng và gây ra gián đoạn hoặc mất mát dịch vụ.
+ Điều này là không mong muốn, đặc biệt khi chuỗi dịch vụ đó đang phục vụ
+ các ứng dụng quan trọng hoặc yêu cầu đáp ứng thời gian thực.
+ Do đó, trong thực tế, thông thường mỗi nút vật lý chỉ chứa tối đa 1 VNF
+ của một chuỗi dịch vụ.
+ Điều này giúp giảm thiểu rủi ro và tối ưu hóa quá trình khôi phục dịch
+ vụ khi có sự cố xảy ra.
+ Nếu có nhiều VNF trong cùng một SFC, các VNF đó thường được triển khai
+ trên các nút mạng khác nhau để đảm bảo tính sẵn sàng và tin cậy của dịch
+ vụ.
+ Khi giải quyết bài toán SFC embedding, các ràng buộc về địa điểm đặt các
+ VNF cần được xem xét để đảm bảo tính khả thi và hiệu quả của việc triển
+ khai chuỗi dịch vụ mạng trên mạng vật lý.
+ Việc tối ưu hóa vị trí đặt các VNF và quản lý tài nguyên mạng thông minh
+ là những yếu tố quan trọng giúp đạt được việc triển khai SFC một cách hiệu
+ quả và ổn định:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sum_{v\in N^{S}}\phi_{i}^{v}\leq1∀i\in N^{S}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thứ tư, để một chuỗi dịch vụ (SFC) hoạt động, toàn bộ các VNF trong chuỗi
+ đó phải được triển khai lên mạng vật lý.
+ Mỗi VNF phải được đặt vào một nút vật lý cụ thể để đảm bảo tính hoàn chỉnh
+ và liên tục của chuỗi dịch vụ.
+ Việc đặt mỗi VNF trên một nút vật lý duy nhất đảm bảo rằng mạng vật lý
+ sẽ cung cấp đủ tài nguyên và khả năng để thực hiện các chức năng mạng cụ
+ thể.
+ Điều này giúp đảm bảo tính sẵn sàng và hiệu quả của chuỗi dịch vụ, vì nếu
+ một VNF bị thiếu hoặc không triển khai, chuỗi dịch vụ sẽ không hoạt động
+ đúng cách.
+ Các biến chỉ vị trí đặt VNF trên các nút vật lý được xác định để quyết
+ định nút nào sẽ đảm nhiệm việc triển khai mỗi VNF.
+ Điều này đòi hỏi sự tối ưu hóa vị trí đặt VNF và phân bổ tài nguyên mạng
+ một cách hiệu quả để đáp ứng yêu cầu của chuỗi dịch vụ mạng và đảm bảo
+ hoạt động ổn định của mạng.
+ Việc tối ưu hóa vị trí đặt VNF và quản lý tài nguyên mạng thông minh là
+ một trong những thách thức quan trọng trong bài toán SFC embedding.
+ Để đảm bảo tính khả thi và hiệu quả của việc triển khai chuỗi dịch vụ mạng
+ trên mạng vật lý, cần áp dụng các thuật toán tối ưu hóa và phương pháp
+ phân bổ tài nguyên thông minh để đạt được việc triển khai SFC một cách
+ hiệu quả và liên tục.
+\begin_inset Formula 
+\begin{equation}
+\sum_{i\in N}\phi_{i}^{v}=1∀i\in N^{S}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuối cùng, để chuỗi dịch vụ hoạt động đúng theo thiết kế và yêu cầu, thứ
+ tự đặt các VNF trên mạng vật lí phải tuân đúng theo logic đã được đặt ra
+ bởi chuỗi dịch vụ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sum_{j\in N^{S}}\phi_{ij}^{vw}-\sum_{i\in N^{S}}\phi_{ij}^{vw}=\phi_{i}^{v}-\phi_{i}^{v}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Như vậy, ta đã xác định được toàn bộ các điều kiện ràng buộc của bài toán
+ là các Hệ thức 1, 2, 3, 4, và 5.
+\end_layout
+
+\begin_layout Subsection
+Các bài toán đặt ra.
+\end_layout
+
+\begin_layout Standard
+Từ các dữ kiện đầu vào, ta có thể đặt ra một số bài toán kèm các hàm toán
+ học của chúng.
+\end_layout
+
+\begin_layout Itemize
+Tổng số nút và liên kết vật lí là nhỏ nhất (Minimization of Node and Link):
+ đây là một trong những bài toán quan trọng trong lĩnh vực SFC embedding.
+ Mục tiêu của bài toán này là tối ưu hóa cấu trúc mạng vật lý để đáp ứng
+ yêu cầu triển khai chuỗi dịch vụ mạng (SFC) với số lượng nút mạng và liên
+ kết vật lý nhỏ nhất, đồng thời đảm bảo hoạt động hiệu quả và chất lượng
+ dịch vụ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+min\left(\phi_{G^{S}}^{G^{V}}\right)=min\left(\sum_{i\in N^{S}}\sum_{v\in N^{V}}\phi_{i}^{v}+\sum_{ij\in N^{S}}\sum_{v\text{w}\in N^{V}}\phi_{ij}^{vw}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tổng lượng tài nguyên cần sử dụng là ít nhất (Minimization of Resource Utilizati
+on): đây là mục tiêu quan trọng của việc nhúng SFC nhằm giảm thiểu lượng
+ tài nguyên mạng (bao gồm băng thông, CPU, bộ nhớ và các tài nguyên khác)
+ được sử dụng để triển khai chuỗi dịch vụ mạng (SFC) trên mạng vật lý.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+min\left(C_{G^{S}}^{G^{V}}\right)=min\left(\sum_{i\in N^{S}}\sum_{v\in N^{V}}\phi_{i}^{v}c^{v}+\sum_{ij\in N^{S}}\sum_{v\text{w}\in N^{V}}\phi_{ij}^{vw}b_{ij}^{v}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tổng chi phí cần thiết sử dụng là nhỏ nhất (Minimization of Cost): nhằm
+ giảm thiểu tổng chi phí liên quan đến việc triển khai chuỗi dịch vụ mạng
+ (SFC) trên mạng vật lý, bao gồm chi phí tài nguyên mạng, chi phí triển
+ khai VNF, chi phí vận hành và các chi phí khác liên quan đến hoạt động
+ của SFC (Giả sử giá của mỗi đơn vị tài nguyên sử dụng trên nút vật lý 
+\begin_inset Formula $i$
+\end_inset
+
+ là 
+\begin_inset Formula $\Delta_{i}$
+\end_inset
+
+, giá của mỗi đơn vị tài nguyên sử dụng trên liên kết vật lí 
+\begin_inset Formula $ij$
+\end_inset
+
+ là
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $\Delta_{ij})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+min\left(\Delta_{G^{S}}^{G^{V}}\right)=min\left(\sum_{i\in N^{S}}\sum_{v\in N^{V}}\phi_{i}^{v}c^{v}\Delta_{i}+\sum_{ij\in N^{S}}\sum_{v\text{w}\in N^{V}}\phi_{ij}^{vw}b_{ij}^{v}\Delta_{ij}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Độ trễ toàn phần của SFC là nhỏ nhất (Minimization of End-to-End Latency):
+ giảm thiểu thời gian trễ tổng cộng mà các gói tin đi qua tất cả các VNF
+ trong chuỗi dịch vụ mạng từ điểm khởi tạo đến điểm kết thúc (Giả sử mỗi
+ liên kết 
+\begin_inset Formula $if$
+\end_inset
+
+ có một độ trễ không đổi là 
+\begin_inset Formula $d_{ij}$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+min\left(d_{G^{S}}^{G^{V}}\right)=min\left(\sum_{ij\in L^{S}}\sum_{v\text{w}\in L^{V}}\phi_{ij}^{vw}d_{ij}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Các bài toán trên trong lĩnh vực SFC embedding đều liên quan đến việc triển
+ khai chuỗi dịch vụ mạng (SFC) trên mạng vật lý một cách hiệu quả và đáp
+ ứng các yêu cầu và ràng buộc của chuỗi dịch vụ.
+\end_layout
+
+\begin_layout Section
+Phương pháp triển khai.
+\end_layout
+
+\begin_layout Subsection
+Đề xuất phương pháp.
+\end_layout
+
+\begin_layout Standard
+Hiện tại, đã có một số nỗ lực được tiến hành để giải quyết vấn đề vị trí
+ VNF và triển khai SFC.
+ Tuy nhiên, trong các nghiên cứu trước đó vẫn còn tồn tại một số thách thức
+ chưa được hoàn toàn giải quyết.
+ Thứ nhất, trạng thái mạng và lưu lượng truy cập thường biến đổi phức tạp
+ vì yêu cầu đến xuất hiện ngẫu nhiên.
+ Điều này yêu cầu một mô hình thích hợp để theo dõi những biến đổi trạng
+ thái mạng động này.
+ Thứ hai, các yêu cầu dịch vụ mạng khác nhau có thể có đặc điểm lưu lượng
+ và yêu cầu QoS khác nhau, vì vậy cần phải sử dụng phương pháp tiếp cận
+ trực tuyến, thích ứng để tự động triển khai SFC với các yêu cầu đa dạng
+ này.
+ Thách thức thứ ba là các nhà cung cấp NFV và khách hàng thường theo đuổi
+ các mục tiêu khác nhau, thậm chí có thể mâu thuẫn, khiến việc đạt được
+ một giải pháp triển khai SFC có lợi cho cả hai bên trở nên khó khăn.
+\end_layout
+
+\begin_layout Standard
+Để đối mặt với những thách thức trên, NFVdeep đã đề xuất một phương pháp
+ học tăng cường sâu (DRL) thích ứng và trực tuyến để triển khai SFC và giải
+ quyết toàn diện ba vấn đề này.
+ Đầu tiên, để đối phó với thách thức về trạng thái mạng động, chúng tôi
+ giới thiệu mô hình quyết định Markov (MDP) để nắm bắt các biến đổi trạng
+ thái mạng.
+ MDP giúp xác định mức sử dụng tài nguyên mạng hiện tại (bao gồm CPU, bộ
+ nhớ và băng thông) và tình trạng triển khai SFC đang chạy.
+ Nhờ đó, các biến đổi trạng thái mạng động có thể được tự động và liên tục
+ biểu thị thông qua chuyển đổi trạng thái MDP.
+\end_layout
+
+\begin_layout Standard
+Để giải quyết thách thức thứ hai, chúng tôi đưa ra phương pháp tiếp cận
+ DRL dựa trên độ dốc chính sách (PG) để tự động triển khai SFC.
+ DRL là một phương pháp tiếp cận mới nổi lên để giải quyết không gian trạng
+ thái mạng lớn và chuyển đổi trạng thái mạng thời gian thực.
+ Trong khi đó, PG là một phương pháp không sử dụng mô hình, mang lại lợi
+ thế trong việc cải thiện hiệu quả đào tạo và hội tụ đến mức tối ưu.
+ Khi đã hội tụ trong quá trình đào tạo, NFVdeep có thể cung cấp giải pháp
+ triển khai SFC hiệu quả, với phần thưởng cao, phù hợp với từng yêu cầu
+ đến và cân nhắc tài nguyên hiện tại.
+\end_layout
+
+\begin_layout Standard
+Thách thức thứ ba là mục tiêu khác nhau của các nhà cung cấp NFV và khách
+ hàng, tạo ra khó khăn trong việc đạt được giải pháp triển khai SFC có lợi
+ cho cả hai bên.
+ Để giải quyết vấn đề này, NFVdeep đặt mục tiêu cùng nhau giảm thiểu chi
+ phí vận hành của các máy chủ bị chiếm dụng và tối đa hóa tổng thông lượng
+ của các yêu cầu được chấp nhận cho khách hàng.
+ Chúng tôi xây dựng mô hình chia sẻ chức năng MDP, dựa trên tổng thông lượng
+ có trọng số của các yêu cầu được chấp nhận (thu nhập), trừ đi tổng chi
+ phí có trọng số của các máy chủ bị chiếm dụng (chi phí) để triển khai SFC.
+ Điều này có thể được coi như tổng lợi nhuận của hệ thống NFV.
+ Bên cạnh đó, chúng tôi sử dụng phương pháp tuần tự hóa và quay lui để giảm
+ không gian hành động kích thước cao khi đặt SFC giữa nhiều máy chủ ứng
+ cử viên.
+ Cụ thể, chúng tôi xử lý tuần tự từng VNF của một SFC trong mỗi lần chuyển
+ đổi trạng thái MDP và quay lại trạng thái trước đó nếu một SFC không thể
+ được triển khai hoàn toàn.
+\end_layout
+
+\begin_layout Standard
+Tóm lại, phương pháp NFVdeep dựa trên PG mang đến khả năng đáp ứng nhanh
+ chóng các yêu cầu đến một cách ngẫu nhiên và tự động cung cấp giải pháp
+ triển khai SFC nhận biết QoS với phần thưởng cao.
+ 
+\end_layout
+
+\begin_layout Subsection
+Phương pháp học tăng cường.
+\end_layout
+
+\begin_layout Subsubsection
+Giới thiệu
+\end_layout
+
+\begin_layout Standard
+Học tăng cường (RL) là một nhánh quan trọng của học máy, trong đó tác tử
+ (Agent) được đào tạo thông qua cơ chế thưởng phạt.
+ RL liên quan đến việc tối ưu hóa các hành động hoặc con đường để đạt được
+ phần thưởng tối đa và hình phạt tối thiểu thông qua quan sát trong từng
+ tình huống cụ thể.
+ Nó dựa trên việc khen thưởng những hành vi mong muốn hoặc trừng phạt những
+ hành vi không mong muốn.
+ Ở đây, Agent học cách thực hiện một tác vụ thông qua các tương tác try-error
+ được lặp đi lặp lại với môi trường động.
+ Phương pháp học tập này cho phép Agent đưa ra một loạt quyết định nhằm
+ tối đa hóa chỉ số phần thưởng cho nhiệm vụ mà không cần sự can thiệp của
+ con người và không được lập trình rõ rang để đạt được nhiệm vụ.
+ Thông qua một loại các phép try-error, Agent học hỏi liên tục trong environment
+ từ các hành động và kinh nghiệm của chính mình.
+ Mục tiêu duy nhất của Agent là tìm ra mô hình hành động phù hợp để tối
+ đa hóa phần thưởng tích lũy.
+ 
+\end_layout
+
+\begin_layout Standard
+Các thuật ngữ được sử dụng trong học tăng cường: 
+\end_layout
+
+\begin_layout Itemize
+Tác tử (Agent): Tác tử là thực thể được đào tạo hoặc ra quyết định trong
+ học tăng cường.
+ Nó tương tác với môi trường và học cách thực hiện các hành động tối ưu
+ để đạt được phần thưởng cao nhất.
+ Tùy thuộc vào vấn đề cụ thể, tác tử có thể là robot trong môi trường vật
+ lý, hệ thống quyết định tài chính, hoặc bất kỳ hệ thống nào khác mà cần
+ thực hiện các quyết định.
+\end_layout
+
+\begin_layout Itemize
+Môi trường (Environment): Môi trường đại diện cho môi trường hoạt động mà
+ tác tử tương tác và học.
+ Nó có thể là môi trường vật lý như robot trong môi trường thực tế, trò
+ chơi điện tử, hoặc các hệ thống trừu tượng như quyết định tài chính, mạng,
+ v.v.
+ Môi trường cung cấp thông tin cần thiết cho tác tử để đưa ra quyết định
+ và đánh giá hiệu quả của hành động.
+\end_layout
+
+\begin_layout Itemize
+Trạng thái (State): Trạng thái là biểu diễn của môi trường tại một thời
+ điểm cụ thể.
+ Trạng thái có thể chứa toàn bộ thông tin cần thiết để mô tả môi trường
+ hoặc chỉ một phần thông tin đó.
+ Trạng thái có thể thay đổi theo thời gian khi tác tử thực hiện các hành
+ động.
+\end_layout
+
+\begin_layout Itemize
+Hành động (Action): Hành động là quyết định hoặc hành vi mà tác tử thực
+ hiện trong môi trường.
+ Hành động có thể là các tác vụ đơn giản như di chuyển, hoặc các hành vi
+ phức tạp hơn như chọn cổ phiếu trong thị trường tài chính, chọn một nút
+ mạng tiếp theo trong mạng, v.v.
+ Tác tử sẽ lựa chọn hành động dựa trên trạng thái hiện tại của môi trường
+ và mục tiêu tối đa hóa phần thưởng tích lũy.
+\end_layout
+
+\begin_layout Itemize
+Phần thưởng (Reward): Phần thưởng là tín hiệu phản hồi mà tác tử nhận được
+ từ môi trường sau khi thực hiện một hành động.
+ Phần thưởng thường đại diện cho mức độ mong muốn hoặc giá trị của hành
+ động đó và được sử dụng để định hướng quá trình học của tác tử.
+ Mục tiêu của tác tử là tối đa hóa tổng phần thưởng tích lũy từ việc thực
+ hiện một chuỗi hành động.
+\end_layout
+
+\begin_layout Itemize
+Chính sách (Policy): Là chiến lược hoặc quy tắc mà tác tử sử dụng để đưa
+ ra quyết định.
+ Chính sách có thể được biểu diễn bằng một ánh xạ từ trạng thái đến hành
+ động hoặc có thể là một mô hình học máy phức tạp.
+ 
+\end_layout
+
+\begin_layout Itemize
+Hàm giá trị (Value function): Là một hàm ước lượng mức độ mong đợi của phần
+ thưởng tích lũy mà tác tử có thể đạt được từ một trạng thái hoặc cặp trạng
+ thái-hành động.
+ Hàm giá trị được sử dụng để đánh giá và so sánh các chính sách khác nhau.
+ 
+\end_layout
+
+\begin_layout Itemize
+Q-Value: Là giá trị kỳ vọng của phần thưởng tích lũy mà tác tử có thể đạt
+ được từ một cặp trạng thái-hành động.
+ Q-Value được sử dụng trong các thuật toán học tăng cường dựa trên giá trị
+ như Q-Learning và SARSA.
+ 
+\end_layout
+
+\begin_layout Itemize
+Khám phá và khai thác (Exploration and Exploitation): Đây là sự cân đối
+ giữa việc khám phá các hành động mới để thu thập thông tin về môi trường
+ và khai thác các hành động đã biết mang lại phần thưởng cao trong quá khứ.
+ Khám phá giúp tác tử khám phá ra các hành động tốt hơn, trong khi khai
+ thác tận dụng kiến thức đã có.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Khai thác và khám phá.
+\end_layout
+
+\begin_layout Standard
+Trong lĩnh vực học tăng cường, cân bằng giữa khai thác (exploitation) và
+ khám phá (exploration) đóng vai trò quan trọng trong việc đưa ra quyết
+ định và tìm kiếm giải pháp tối ưu.
+ Hai khái niệm này đại diện cho hai chiến lược đối lập nhau mà tác tử có
+ thể sử dụng khi tương tác với môi trường để đạt được phần thưởng cao nhất.
+\end_layout
+
+\begin_layout Standard
+Khai thác (Exploitation) là việc chọn hành động dựa trên những gì đã được
+ biết hiện tại và được coi là tối ưu trong việc đạt được phần thưởng hoặc
+ giá trị cao nhất.
+ Khi tác tử khai thác, nó tập trung vào tận dụng kiến thức đã có để tìm
+ kiếm hành động có khả năng mang lại phần thưởng cao nhất hoặc giá trị cao
+ nhất trong môi trường hiện tại.
+ Phương pháp khai thác có thể được thực hiện bằng cách chọn hành động có
+ giá trị ước lượng cao nhất dựa trên các phép đo như giá trị Q (value) hoặc
+ giá trị hành động trung bình.
+\end_layout
+
+\begin_layout Standard
+Khai thác giúp tác tử tận dụng kiến thức hiện có và hướng tới giải pháp
+ tối ưu dựa trên thông tin đã biết.
+ Điều này là hết sức quan trọng khi tác tử đã tích lũy một lượng lớn kinh
+ nghiệm từ việc tương tác với môi trường và đã học được những hành động
+ tốt trong quá khứ.
+ Tuy nhiên, cần lưu ý rằng chỉ tập trung vào khai thác có thể dẫn đến tác
+ tử rơi vào tối ưu cục bộ.
+ Điều này xảy ra khi tác tử không khám phá đủ để tìm ra các hành động tốt
+ hơn mà ban đầu có thể không được chọn.
+\end_layout
+
+\begin_layout Standard
+Khám phá (Exploration) là quá trình tìm hiểu và khám phá các hành động mới
+ và trạng thái chưa được khám phá để đạt được kiến thức thêm về môi trường.
+ Bằng cách khám phá, tác tử có thể tìm ra những hành động có tiềm năng cao
+ mà trước đây chưa được biết đến hoặc ít được thử nghiệm.
+ Điều này giúp tác tử có cơ hội tìm ra giải pháp tối ưu hơn hoặc tránh rơi
+ vào các giải pháp không tối ưu.
+\end_layout
+
+\begin_layout Standard
+Khám phá là một yếu tố quan trọng để tránh tác tử rơi vào các bước tối ưu
+ cục bộ và mở rộng không gian hành động để tìm ra những hành động tiềm năng
+ tốt hơn.
+ Nếu chỉ tập trung vào khai thác mà không khám phá, tác tử có thể bỏ qua
+ những giải pháp tối ưu khác mà chưa được biết đến.
+ Điều này đặc biệt quan trọng khi tác tử đang bắt đầu học hoặc môi trường
+ thay đổi liên tục.
+\end_layout
+
+\begin_layout Standard
+Cân bằng giữa khai thác và khám phá là một thách thức trong học tăng cường.
+ Tác tử cần phải tự đánh giá và quyết định làm thế nào để cân bằng hai chiến
+ lược này để đạt được hiệu quả tốt nhất trong việc đạt được phần thưởng
+ cao nhất.
+ Nếu chỉ tập trung vào khai thác, tác tử có thể không khám phá các hành
+ động tốt hơn và dẫn đến rơi vào tối ưu cục bộ.
+ Ngược lại, nếu chỉ tập trung vào khám phá, tác tử có thể không tận dụng
+ tối đa thông tin đã biết và tốn nhiều thời gian để khám phá.
+\end_layout
+
+\begin_layout Standard
+Có nhiều phương pháp để cân bằng giữa khai thác và khám phá, và các nhà
+ nghiên cứu đã đưa ra nhiều thuật toán học tăng cường phức tạp để giải quyết
+ vấn đề này.
+ Một số phương pháp thông dụng bao gồm Epsilon-Greedy, Upper Confidence
+ Bound (UCB), và Thompson Sampling, trong đó mỗi phương pháp có cách tiếp
+ cận riêng để quyết định khi nào khai thác và khi nào khám phá.
+\end_layout
+
+\begin_layout Subsubsection
+Multi-armed Bandits
+\end_layout
+
+\begin_layout Standard
+Multi-armed bandits (MAB) là một bài toán cơ bản trong học tăng cường, nơi
+ một tác tử phải chọn một trong nhiều "cánh tay" (arms) để nhận được phần
+ thưởng.
+ Mỗi cánh tay đại diện cho một hành động và có một phân phối phần thưởng
+ riêng.
+ 
+\end_layout
+
+\begin_layout Standard
+Bài toán MAB thường được mô tả bằng một bảng phần thưởng, trong đó mỗi hàng
+ đại diện cho một cánh tay và mỗi ô trong hàng đại diện cho một giá trị
+ phần thưởng có thể nhận được khi chọn cánh tay tương ứng.
+ Mục tiêu của tác tử là tìm cách tối đa hóa tổng phần thưởng nhận được sau
+ một số lượng hành động hữu hạn.
+ 
+\end_layout
+
+\begin_layout Standard
+Có hai dạng chính của bài toán MAB: 
+\end_layout
+
+\begin_layout Itemize
+Bài toán không đổi (stationary bandits): Trong trường hợp này, các phần
+ thưởng của các cánh tay không thay đổi theo thời gian.
+ Điều này có nghĩa là phân phối phần thưởng của mỗi cánh tay là cố định
+ trong suốt quá trình học tăng cường.
+ 
+\end_layout
+
+\begin_layout Itemize
+Bài toán đổi mới (non-stationary bandits): Trong trường hợp này, các phần
+ thưởng của các cánh tay có thể thay đổi theo thời gian.
+ Điều này có thể đại diện cho tình huống trong đó phân phối phần thưởng
+ của các cánh tay có thể thay đổi hoặc có xu hướng thay đổi theo thời gian.
+\end_layout
+
+\begin_layout Standard
+Để giải quyết bài toán MAB, có nhiều thuật toán được phát triển, bao gồm:
+ 
+\end_layout
+
+\begin_layout Itemize
+Thuật toán 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+-greedy: Thuật toán này chọn một hành động ngẫu nhiên với xác suất 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ (epsilon) và chọn hành động tốt nhất với xác suất 1- 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ Điều này giúp tác tử khám phá các hành động mới trong khi vẫn tận dụng
+ các hành động đã biết tốt.
+ 
+\end_layout
+
+\begin_layout Itemize
+Thuật toán UCB (Upper Confidence Bound): Thuật toán UCB sử dụng một công
+ thức kết hợp giữa phần thưởng trung bình và sự khám phá để chọn hành động.
+ Nó ưu tiên chọn các hành động có khả năng mang lại phần thưởng cao nhất
+ hoặc có độ không chắc chắn lớn.
+ 
+\end_layout
+
+\begin_layout Itemize
+Thuật toán Thompson Sampling: Thuật toán Thompson Sampling sử dụng một phân
+ phối xác suất để chọn hành động.
+ Mỗi cánh tay được coi là một phân phối, và thuật toán chọn hành động bằng
+ cách rút một mẫu từ các phân phối ước lượng và chọn cánh tay có mẫu có
+ giá trị phần thưởng lớn nhất.
+ Các thuật toán này cung cấp các chiến lược khác nhau để giải quyết bài
+ toán MAB và đạt được cân bằng giữa việc khám phá và khai thác trong việc
+ chọn hành động.
+ 
+\end_layout
+
+\begin_layout Standard
+Ví dụ: 1-armed bandit là một máy đánh bạc đơn giản trong đó bạn nhét 1 đồng
+ xu vào máy, kéo cần gạt và nhận được phần thưởng ngay lập tức.
+ Nhưng tất cả các sòng bạc đều cấu hình các máy đánh bạc này theo cách mà
+ tất cả những người đánh bạc cuối cùng đều bị mất tiền.
+ Multi-armed bandit là một máy đánh bạc phức tạp, thay vì 1 thì có nhiều
+ cần gạt mà con bạc có thể kéo, mỗi cần gạt mang lại phần thưởng khác nhau.
+ Phân phỗi xác suất cho phần thưởng tương ứng với mỗi cần gạt là khác nhau
+ và người đánh bạc không biết.
+ Nhiệm vụ là xác định cần kéo nào để nhận phần thưởng tối đa sau một loạt
+ thử nghiệm nhất định.
+ 
+\end_layout
+
+\begin_layout Standard
+Phần thưởng kỳ vọng cũng có thể coi là hàm giá trị hành động.
+ Nó được gọi là Q(a) và xác định phần thưởng trung bình cho mỗi hành động
+ tại thời điểm t: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Q(a)=E\left[r|a\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Regret: Giả sử chúng ta biết Arm tốt nhất để giải quyết vấn đền bandits
+ đã cho.
+ Nếu chúng ta tiếp tục dùng Arm đó thì chúng ta sẽ nhận được phần thưởng
+ có kỳ vọng tối đa.
+ Nhưng trong thực tế, chúng ta cần thử nghiệm lặp đi lặp lại bằng cách dùng
+ các Arm khác nhau cho đến khi chúng ta gần như chắc chắn rằng Arm được
+ dùng thu được phần thưởng trung bình tối đa tại thời điểm t.
+ Nói cách khác, chúng ta muốn tối đa hóa phần thưởng của mình ngay trong
+ cả lúc học tập.
+ Khi học chúng ta sẽ có Regret khi không chọn nhánh tối ưu.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Markov decision process(MDP) 
+\end_layout
+
+\begin_layout Standard
+MDP là một mô hình toán học được sử dụng trong học tăng cường để mô tả quyết
+ định tuần tự trong một môi trường dựa trên lý thuyết xác suất và trạng
+ thái Markov.
+ Quá trình quyết định Markov là một quá trình điều khiển ngẫu nhiên rời
+ rạc, cho phép người học học hỏi từ tương tác để đạt được mục tiêu.
+\end_layout
+
+\begin_layout Standard
+MDP được mô tả bởi 
+\begin_inset Formula $(S,A,P,R,γ)$
+\end_inset
+
+ như sau: Tại mỗi thời điểm 
+\begin_inset Formula $t$
+\end_inset
+
+, tác nhân nhận một đại diện của môi trường state, 
+\begin_inset Formula $S_{t}∈S$
+\end_inset
+
+, trên cơ sở action 
+\begin_inset Formula $A_{t}∈A(s)^{3}$
+\end_inset
+
+.
+ Bước sau đó, Agent sẽ nhận 1 số reward 
+\begin_inset Formula $R_{t+1}∈R$
+\end_inset
+
+.
+ Như vậy, ta cho chuỗi quy tắc sau: 
+\begin_inset Formula $S_{0},A_{0},R_{1},S_{1},A_{1},R_{2},S_{2},A_{2},R_{3},…$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Đánh giá: return – tổng phần thưởng tích lũy - đây là biến ngẫu nhiên do
+ phần thưởng nhận được là ngẫu nhiên và policy là ngẫu nhiên 
+\end_layout
+
+\begin_layout Standard
+Undiscount return: Là tổng tất cả các phần thưởng mà sẽ có trong tương lai.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+G_{t}=R_{t+1}+R_{t+2}+⋯+R_{T}=\sum_{k=0}^{T-t-1}R_{t+k+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Discount return: là tổng discounted reward từ bước 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+G_{t}=R_{t+1}+R_{t+2}+...=\sum_{k=0}^{\infty}\gamma^{k}*R_{t+k+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ở đây ta có 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ 
+\begin_inset Formula $(0<γ<1)$
+\end_inset
+
+ được gọi là hệ số chiết khấu là một phần quan trọng của return, nó xác
+ định mức return cùng với value function (đánh giá không cao reward nhận
+ được trong thời gian càng lâu).
+ Khi 
+\begin_inset Formula $γ=1$
+\end_inset
+
+ khi biết chắc chắn rằng mọi thứ rõ ràng.
+ Tác dụng của discount factor giúp tránh được lợi nhuận vô hạn vì như thế
+ sẽ ta sẽ không thể so sánh được vì 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $γ<1$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ nên 
+\begin_inset Formula $G_{t}$
+\end_inset
+
+ sẽ hội tụ.
+\end_layout
+
+\begin_layout Standard
+Averate return: 
+\begin_inset Formula 
+\begin{equation}
+G_{t}=\frac{1}{T-t-1}\left(R_{t+1}+R_{t+2}+...+R_{T}\right)=\frac{1}{T-t-1}\sum_{k=0}^{T-t-1}R_{t+k+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tác nhân học tăng cường cố gắng tìm ra chiến lược tối ưu (optimal policy)
+ để đạt được mục tiêu tối đa hóa phần thưởng tích lũy.
+ Chiến lược tối ưu là một hàm ánh xạ từ trạng thái sang hành động tối ưu
+ nhằm đưa ra quyết định tối ưu tại mỗi trạng thái.
+ Mục tiêu của tác nhân là tìm ra chiến lược tối ưu này thông qua quá trình
+ học tăng cường.
+ Một policy là một ánh xạ 
+\begin_inset Formula $\pi$
+\end_inset
+
+: 
+\begin_inset Formula $SxA\rightarrow\text{\left[0,1\right]}$
+\end_inset
+
+, mỗi hành động a có xác suất thực hiện ở trạng thái s: 
+\begin_inset Formula $\pi(a|s)$
+\end_inset
+
+.
+ Một chiến lược được coi là tối ưu nếu nó đảm bảo rằng tác nhân sẽ đạt được
+ giá trị kỳ vọng của phần thưởng lớn nhất có thể trong quá trình tương tác
+ với môi trường.
+ Nói cách khác, tối ưu hóa chiến lược nhằm đạt được hiệu suất cao nhất hoặc
+ phần thưởng lớn nhất trong hệ thống.
+\end_layout
+
+\begin_layout Standard
+Value function là kỳ vọng của return.
+ Hàm giá trị (value function) trong học tăng cường là một hàm số đo lường
+ giá trị của một trạng thái (state) hoặc cặp trạng thái-hành động (state-action
+ pair).
+ Nó định nghĩa giá trị dự kiến mà tác nhân có thể nhận được từ môi trường
+ khi tuân thủ một chiến lược nhất định.
+\end_layout
+
+\begin_layout Standard
+Cụ thể, có hai loại hàm giá trị chính trong học tăng cường: 
+\end_layout
+
+\begin_layout Itemize
+Hàm giá trị trạng thái (State Value Function - 
+\begin_inset Formula $V(s)$
+\end_inset
+
+): Đây là hàm giá trị đo lường giá trị dự kiến từ một trạng thái s khi tuân
+ thủ một chiến lược nhất định.
+ Nó biểu thị giá trị dự kiến mà tác nhân sẽ nhận được từ trạng thái s và
+ sau đó tuân thủ chiến lược để đạt được các phần thưởng trong tương lai.
+\end_layout
+
+\begin_layout Itemize
+Hàm giá trị hành động (Action Value Function - 
+\begin_inset Formula $Q(s,a)$
+\end_inset
+
+): Đây là hàm giá trị đo lường giá trị dự kiến từ cặp trạng thái-hành động
+ 
+\begin_inset Formula $\left(s,a\right)$
+\end_inset
+
+ khi tuân thủ một chiến lược nhất định.
+ Nó biểu thị giá trị dự kiến mà tác nhân sẽ nhận được từ việc thực hiện
+ hành động a tại trạng thái s và sau đó tuân thủ chiến lược để đạt được
+ các phần thưởng trong tương lai
+\end_layout
+
+\begin_layout Standard
+Hai hàm giá trị này liên kết với nhau thông qua công thức Bellman, mà cho
+ phép tính toán lại giá trị dự kiến từ các trạng thái hoặc cặp trạng thái-hành
+ động dựa trên các giá trị của trạng thái và hành động khác.
+ Điều này giúp tác nhân điều chỉnh và cập nhật giá trị ước tính dựa trên
+ kinh nghiệm thu thập được từ môi trường.
+ Value function của trạng thái s dựa theo chính sách 
+\begin_inset Formula $\pi$
+\end_inset
+
+ được ký kiệu 
+\begin_inset Formula $v_{π}(s)$
+\end_inset
+
+, là lợi nhuận kỳ vọng khi bắt đầu từ trạng thái s và tuân theo chính sách
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+: (
+\begin_inset Formula $v_{π}(s)$
+\end_inset
+
+ là state-value function for policy 
+\begin_inset Formula $\pi$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{π}(s)=\sum_{a}\pi\left(a|s\right)*q_{\pi}\left(s,a\right)=E\left[q_{\pi}\left(S_{t},A_{t}\right)|S_{t}=s,\pi\right],\forall s
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tương tự ta có,
+\begin_inset Formula $q_{π}(s)$
+\end_inset
+
+ là action-value function for policy 
+\begin_inset Formula $\pi$
+\end_inset
+
+, được định nghĩa là chọn hành động a ở trạng thái s theo chính sách 
+\begin_inset Formula $\pi$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q_{π}(s)=E\left[G_{t}|S_{t}=s,A_{t}=a\right]=E_{\pi}\left[\sum_{k=0}^{\infty}\gamma*R_{t+k+1}|S_{t}=s,A_{t}=a\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Các hàm 
+\begin_inset Formula $v_{π}(s),q_{π}(s)$
+\end_inset
+
+ có thể được ước tính từ kinh nghiệm (lặp đi lặp lại sẽ hội tụ).
+ 
+\end_layout
+
+\begin_layout Standard
+Chính sách 
+\begin_inset Formula $\pi$
+\end_inset
+
+ được gọi là tốt hơn hoặc bằng chính sách 
+\begin_inset Formula $\pi'$
+\end_inset
+
+ nếu lợi tức kỳ vọng của nó lơn hơn hoặc bằng 
+\begin_inset Formula $\pi$
+\end_inset
+
+'cho tất cả các trạng thái: 
+\begin_inset Formula $π≥\pi'^{'}⇔v_{π}(s)≥v'(s)∀s∈S$
+\end_inset
+
+ (sẽ luôn luôn có một chính sách tốt hơn hoặc bằng tất cả các chính sách
+ khác và nó gọi là optimal policy 
+\begin_inset Formula $v_{π}^{*}(s)$
+\end_inset
+
+ ).
+ 
+\end_layout
+
+\begin_layout Standard
+Khi ta có chính sách tối ưu thì ta sử dụng tham lam để chọn các hành động:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+π^{*}(s)=argmax_{a}\left[Q^{*}\left(s,a\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Phương trình Bellman được sử dụng để mô tả quy hoạch động (dynamic programming)
+ và cũng là một công cụ quan trọng trong Q-Learning và các thuật toán học
+ tăng cường khác.
+\end_layout
+
+\begin_layout Itemize
+Phương trình kỳ vọng Bellman:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{π}\left(s\right)=\sum_{a}\pi\left(s,a\right)*\left[r\left(s,a\right)+\gamma*\sum_{s'}p(s'|a,s)*v_{\pi}(s')\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q_{\pi}\left(s,a\right)=r\left(s,a\right)+\gamma*\sum_{a}p\left(s'|a,s\right)*\sum_{a'\in A}\pi\left(a'|s'\right)*q_{\pi}\left(s',a'\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Phương trình tối ưu Bellman:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v^{*}(s)=max\left[r\left(s,a\right)+\gamma*\sum_{s'}p\left(s'|a,s\right)*v^{*}(s')\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q^{*}\left(s,a\right)=r\left(s,a\right)+\gamma*\sum_{a}p\left(s'|a,s\right)*max\text{\left[q^{*}\text{\left(s',a'\right)}\right]}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Phương pháp quy hoạch động
+\end_layout
+
+\begin_layout Standard
+Dynamic programming (DP) là một phương pháp giải quyết các bài toán tối
+ ưu trong các hệ thống động.
+ Nó dựa trên nguyên lý chia nhỏ bài toán thành các bài toán con nhỏ hơn,
+ giải quyết và lưu trữ kết quả để sử dụng lại.
+ là tập hợp các thuật toán có thể được sử dụng để tính toán các chính sách
+ tối ưu hoặc hàm giá trị tối ưu cho một mô hình môi trường hoàn hảo như
+ MDP’s.
+\end_layout
+
+\begin_layout Standard
+Đánh giá chiến lược (policy evaluation): Trong giai đoạn này, ta đánh giá
+ giá trị của một chiến lược đã cho.
+ Quá trình này nhằm xác định giá trị trạng thái hoặc giá trị hành động dựa
+ trên phương trình Bellman.
+ Ta sử dụng một phương trình lặp để cập nhật giá trị dựa trên các giá trị
+ trạng thái hoặc hành động của các trạng thái tiếp theo.
+ Phương pháp quy hoạch động sử dụng các thuật toán như Value Iteration hoặc
+ Policy Iteration để thực hiện quá trình này.
+ Việc đánh gái chiến lược sử dụng phương pháp điểm bất động (fixed-point
+ iteration).
+ Xuất phát từ đánh giá 
+\begin_inset Formula $v_{0}(s),q_{0}(s,a)$
+\end_inset
+
+, cập nhật nó bằng phương trình sau: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{k+1}=\sum_{a}\pi\left(s,a\right)*\sum_{s',r}p\left(s',r|s,a\right)*\left[r+\gamma*v_{k}\left(s')\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q_{k+1}\left(s,a\right)=\sum_{s',r}p\left(s',r|s,a\right)*\left[r+\gamma*\sum_{a'}\pi\left(a'|s\right)*q_{k}\left(s',a'\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cứ lặp lại phương trình trên nhiều lên, khi 
+\begin_inset Formula $k\rightarrow\infty$
+\end_inset
+
+ thì phương trình tiến tới 
+\begin_inset Formula $v_{π}(s)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cải tiến chiến lược(Policy Improvement)
+\series default
+: Sau khi đã đánh giá được giá trị của một chiến lược, ta có thể cải thiện
+ chiến lược đó để tìm ra một chiến lược tốt hơn.
+ Quá trình này nhằm thay đổi hoặc thay thế các hành động trong chiến lược
+ hiện tại để tăng cường hiệu suất của nó.
+ Ta thường sử dụng các phép toán như argmax hoặc greedy policy để chọn hành
+ động tốt nhất dựa trên giá trị trạng thái đã tính toán được.
+ Nếu đang sử dụng chiến lược 
+\begin_inset Formula $\pi$
+\end_inset
+
+, thay hành động 
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\begin_inset Formula $\left(s\right)$
+\end_inset
+
+ bằng hành động 
+\begin_inset Formula $\pi'\left(s\right)$
+\end_inset
+
+mà được tổng điểm thưởng cao hơn thì chiến lược 
+\begin_inset Formula $\pi'$
+\end_inset
+
+ là chiến lược tốt hơn chiến lược 
+\begin_inset Formula $\pi$
+\end_inset
+
+ :
+\begin_inset Formula $q_{π}(s,\pi'(s))≥v_{π}(s),∀s$
+\end_inset
+
+ thì 
+\begin_inset Formula $v_{\pi'}(s)≥v_{π}(s),∀s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Cập nhật chiến lược (policy iteration)
+\series default
+: Thuật toán này kết hợp hai giai đoạn chính: đánh giá chiến lược (policy
+ evaluation) và cải thiện chiến lược (policy improvement), lặp lại các bước
+ này cho đến khi đạt được chiến lược tối ưu.
+\end_layout
+
+\begin_layout Standard
+Ta biết: 
+\begin_inset Formula $q_{π}(s,argmax\left(q(s,a)\right))=max\left(q_{π}(s,a)\right)≥v_{π}(s)$
+\end_inset
+
+ : trong các hành động a ở trạng thái s, chọn ra hành động a mà cho q lớn
+ nhất thì hành động a cho điểm thưởng tốt nhất.
+ Nên có thể “ăn tham”: 
+\begin_inset Formula $\pi$
+\end_inset
+
+'
+\begin_inset Formula $\left(s\right)=\text{argmax \left(q_{\pi}\left(s,a\right)\right)}$
+\end_inset
+
+.
+ Mỗi lần có hàm q có thể tính lại chiến lược mới và khi có chiến lược mới
+ ta lại đánh giá lại hàm q và cứ lặp lại như vậy:
+\begin_inset Formula $π_{0}→v_{\pi_{0}}→π_{1}→v_{\pi_{1}}…\rightarrow\pi_{*}\rightarrow v_{\pi_{*}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cập nhật hàm giá trị (value iteration): Cập nhật trực tiếp sử dụng phương
+ trình Bellman.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v_{k+1}=max\left[r\left(s,a\right)+\gamma*\sum_{s'}p\left(s'|a,s\right)*v^{*}\left(s'\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q_{k+1}=r\left(s,a\right)+\gamma*\sum_{s'}p\left(s'|a,s\right)*max\left[q^{*}\left(s',a'\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Khó khăn của Quy hoạch động 
+\end_layout
+
+\begin_layout Standard
+• Chi phí tính toán cao: Phương pháp Quy hoạch động đòi hỏi tính toán giá
+ trị trạng thái hoặc giá trị hành động cho tất cả các trạng thái trong không
+ gian trạng thái.
+ Điều này tạo ra một lượng tính toán lớn và tốn kém, đặc biệt là trong các
+ MDP lớn với không gian trạng thái rộng.
+ Việc tính toán và lưu trữ các ma trận giá trị có thể trở thành một thách
+ thức đối với bộ nhớ và thời gian tính toán.
+ 
+\end_layout
+
+\begin_layout Standard
+• Yêu cầu không gian trạng thái và hành động rời rạc: Phương pháp Quy hoạch
+ động được áp dụng chủ yếu cho các bài toán với không gian trạng thái và
+ hành động rời rạc.
+ Điều này giới hạn áp dụng của phương pháp trong các bài toán thực tế có
+ không gian trạng thái và hành động liên tục.
+ Một số phương pháp xấp xỉ như Function Approximation có thể được sử dụng
+ để xử lý các không gian liên tục, nhưng đòi hỏi kỹ thuật và xử lý phức
+ tạp hơn.
+ 
+\end_layout
+
+\begin_layout Standard
+• Tính chính xác của mô hình: Phương pháp Quy hoạch động yêu cầu có một
+ mô hình chính xác của MDP, bao gồm ma trận chuyển trạng thái và phần thưởng.
+ Trong thực tế, việc xác định và xây dựng một mô hình chính xác có thể là
+ một thách thức, đặc biệt là trong các tình huống không biết trước hoặc
+ không chắc chắn.
+ Nếu mô hình không chính xác, kết quả của phương pháp Quy hoạch động có
+ thể bị sai lệch.
+ 
+\end_layout
+
+\begin_layout Standard
+• Khả năng khám phá: Phương pháp Quy hoạch động tập trung vào tìm ra chiến
+ lược tối ưu dựa trên mô hình đã biết.
+ Nó không điều chỉnh hoặc khám phá các hành động mới hoặc trạng thái không
+ rõ ràng.
+ Điều này có thể gây ra khó khăn trong việc khám phá không gian trạng thái
+ và hành động rộng hơn trong các tình huống không biết trước.
+ Một số phương pháp học tăng cường khác như Q-Learning và Sarsa được sử
+ dụng để xử lý vấn đề khám phá này.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Phương pháp Temporal Difference
+\end_layout
+
+\begin_layout Standard
+Phương pháp Temporal Difference (TD) là một phương pháp trong lĩnh vực học
+ tăng cường, sử dụng để ước lượng giá trị của các trạng thái và học tối
+ ưu hóa chính sách.
+ TD kết hợp giữa hai khái niệm quan trọng là "temporal" (thời gian) và "differen
+ce" (khác biệt), và nó dựa trên việc cập nhật giá trị trạng thái dựa trên
+ sự khác biệt giữa các ước lượng giá trị hiện tại và ước lượng giá trị mới.
+ 
+\end_layout
+
+\begin_layout Standard
+Để hiểu rõ hơn về phương pháp TD, chúng ta có thể xem xét ví dụ đơn giản
+ về việc agent điều hướng một con robot trong một mê cung.
+ Mỗi ô trong mê cung đại diện cho một trạng thái, và agent cần tìm cách
+ di chuyển từ trạng thái ban đầu đến trạng thái đích.
+ 
+\end_layout
+
+\begin_layout Standard
+Ban đầu, giá trị của tất cả các trạng thái được khởi tạo một cách ngẫu nhiên.
+ Agent bắt đầu từ trạng thái ban đầu và di chuyển qua các ô khác trong mê
+ cung.
+ Mỗi lần di chuyển, agent nhận được một phần thưởng nhỏ và chuyển đến trạng
+ thái tiếp theo.
+ 
+\end_layout
+
+\begin_layout Standard
+Ở mỗi bước di chuyển, phương pháp TD cập nhật giá trị trạng thái dựa trên
+ sự khác biệt giữa giá trị trạng thái hiện tại và ước lượng giá trị mới.
+ Công thức cập nhật giá trị trạng thái trong phương pháp TD có thể được
+ viết như sau: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V(s)=V\left(s\right)+α*\left(r+\gamma*V\left(s'\right)-V\left(s\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Trong đó: 
+\end_layout
+
+\begin_layout Itemize
+V(s) là giá trị ước lượng của trạng thái hiện tại s.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha$
+\end_inset
+
+ là tỷ lệ học (learning rate) quyết định mức độ cập nhật giá trị.
+ Nó xác định tỷ lệ mà giá trị ước lượng được cập nhật dựa trên sự khác biệt
+ giữa ước lượng hiện tại và ước lượng mới.
+ 
+\end_layout
+
+\begin_layout Itemize
+là phần thưởng nhận được khi chuyển từ trạng thái hiện tại s sang trạng
+ thái tiếp theo s'.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma$
+\end_inset
+
+ là hệ số giảm giá trị (discount factor) để ước lượng giá trị tương lai.
+ Nó quyết định độ quan trọng của các phần thưởng tương lai so với phần thưởng
+ hiện tại.
+ 
+\end_layout
+
+\begin_layout Itemize
+V(s') là ước lượng giá trị của trạng thái tiếp theo s'.
+ 
+\end_layout
+
+\begin_layout Standard
+Công thức trên cập nhật giá trị trạng thái sau mỗi bước di chuyển, dựa trên
+ phần thưởng nhận được và ước lượng giá trị trạng thái tiếp theo.
+ Agent tiếp tục di chuyển và cập nhật giá trị cho đến khi đạt được trạng
+ thái đích.
+ 
+\end_layout
+
+\begin_layout Standard
+Quá trình cập nhật trong phương pháp TD cho phép agent học từ dữ liệu tương
+ tác trực tiếp với môi trường.
+ Điều này giúp agent điều chỉnh và cải thiện ước lượng giá trị của các trạng
+ thái, từ đó tìm ra chính sách tối ưu để đạt được mục tiêu của nhiệm vụ.
+ 
+\end_layout
+
+\begin_layout Standard
+Các biến thể của phương pháp TD như Sarsa và Q-Learning cung cấp các cách
+ tiếp cận khác nhau để ước lượng giá trị và tối ưu hóa chính sách.
+ Chúng đã được áp dụng thành công trong nhiều bài toán học tăng cường, từ
+ điều khiển robot đến trò chơi và hệ thống mạng.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Model-based và Model-free 
+\end_layout
+
+\begin_layout Standard
+Trong lĩnh vực học tăng cường (RL), có hai hướng tiếp cận chính là dựa trên
+ mô hình (Model-based) và không dựa trên mô hình (Model-free).
+ Hai hướng tiếp cận này khác nhau về cách mà tác tử học và tương tác với
+ môi trường.
+\end_layout
+
+\begin_layout Standard
+Hướng tiếp cận Dựa trên Mô hình trong RL là quá trình tạo ra một mô hình
+ của môi trường, tức là một biểu đồ hoặc hàm xác suất biểu diễn sự tương
+ tác giữa các trạng thái và hành động.
+ Tác tử sử dụng mô hình này để dự đoán các trạng thái tiếp theo và phần
+ thưởng trong quá trình học.
+ Sau đó, tác tử sử dụng các phương pháp quyết định như tối ưu hóa giá trị
+ (value) hoặc chính sách (policy) để chọn hành động tốt nhất dựa trên các
+ dự đoán của mô hình.
+ RL dựa trên mô hình có ưu điểm là có thể học hiệu quả từ số lượng tương
+ tác ít hơn với môi trường và thực hiện dự đoán nhanh chóng về tương lai.
+ Tuy nhiên, mô hình xây dựng không hoàn hảo và việc ước lượng sai lầm có
+ thể dẫn đến hành động không tối ưu.
+\end_layout
+
+\begin_layout Standard
+Ngược lại, hướng tiếp cận Không Dựa trên Mô hình trong RL là quá trình tác
+ tử học từ các tương tác trực tiếp với môi trường mà không xây dựng mô hình.
+ Tác tử thu thập dữ liệu từ môi trường, gồm các trạng thái, hành động và
+ phần thưởng, và sử dụng các phương pháp như Q-Learning hoặc Gradient của
+ Chính sách (policy gradient) để cập nhật và tối ưu hóa ước lượng giá trị
+ hoặc chính sách.
+ Tác tử tập trung vào việc học tối ưu hóa giá trị hoặc chính sách dựa trên
+ dữ liệu thực tế thu thập được từ môi trường.
+ RL không dựa trên mô hình có ưu điểm là khả năng áp dụng vào các môi trường
+ phức tạp và không cần biết trước về cấu trúc của môi trường.
+ Tuy nhiên, nó cần số lượng tương tác lớn hơn với môi trường để đạt được
+ hiệu suất tốt và cần thời gian lâu hơn để học so với RL dựa trên mô hình.
+\end_layout
+
+\begin_layout Standard
+Việc chọn giữa RL dựa trên mô hình và RL không dựa trên mô hình phụ thuộc
+ vào tình huống cụ thể, loại môi trường và các ràng buộc của bài toán.
+ RL dựa trên mô hình thường hiệu quả hơn khi dữ liệu tương tác với môi trường
+ hiếm hoặc đắt đỏ, trong khi RL không dựa trên mô hình thích hợp hơn trong
+ các môi trường phức tạp và không thể được mô hình hóa một cách chính xác.
+\end_layout
+
+\begin_layout Subsubsection
+On-Policy và Off-Policy 
+\end_layout
+
+\begin_layout Standard
+Trong lĩnh vực học tăng cường, chúng ta có hai phương pháp quan trọng là
+ trên chính sách (On-policy) và ngoài chính sách (Off-policy).
+ Cả hai phương pháp này đều liên quan đến cách tác tử tương tác với môi
+ trường và học từ dữ liệu thu thập được.
+\end_layout
+
+\begin_layout Standard
+Phương pháp trên chính sách (On-policy) tập trung vào việc học và tương
+ tác theo cùng một chính sách.
+ Chính sách này được sử dụng để chọn hành động trong quá trình tương tác
+ và cũng để cập nhật ước lượng giá trị hoặc chính sách của tác tử.
+ Ví dụ về phương pháp trên chính sách là SARSA, nơi tác tử cập nhật giá
+ trị trạng thái-hành động dựa trên dữ liệu thu thập từ chính sách đang được
+ áp dụng.
+ Một điểm mạnh của phương pháp này là khả năng học tốt hơn khi chính sách
+ thay đổi và có thể đạt được học tối ưu hơn cho chính sách hiện tại.
+\end_layout
+
+\begin_layout Standard
+Trong khi đó, phương pháp ngoài chính sách (Off-policy) cho phép tác tử
+ học từ dữ liệu thu thập từ một chính sách khác với chính sách được sử dụng
+ để cập nhật giá trị hoặc chính sách.
+ Tác tử thu thập dữ liệu từ môi trường bằng cách thực hiện hành động dựa
+ trên một chính sách khác, ví dụ như chính sách ngẫu nhiên hoặc chính sách
+ tối ưu.
+ Phương pháp Q-Learning là một ví dụ về ngoài chính sách, nơi tác tử cập
+ nhật giá trị trạng thái-hành động dựa trên dữ liệu thu thập từ một chính
+ sách khác.
+ Phương pháp ngoài chính sách có ưu điểm là khả năng học từ nhiều chính
+ sách và sử dụng lại dữ liệu thu thập từ các chính sách trước đó.
+ Điều này cho phép tác tử học hiệu quả từ nhiều cách tiếp cận khác nhau
+ và tận dụng kiến thức đã có.
+\end_layout
+
+\begin_layout Standard
+Lựa chọn giữa phương pháp trên chính sách và ngoài chính sách phụ thuộc
+ vào bài toán cụ thể và yêu cầu của tác vụ học tăng cường.
+ Phương pháp trên chính sách thích hợp khi chính sách thay đổi và cần học
+ tối ưu hóa cho chính sách hiện tại.
+ Điều này đặc biệt hữu ích khi tác tử đang học trong môi trường thay đổi
+ hoặc trong các bài toán chuyển đổi nhiệm vụ.
+ Phương pháp ngoài chính sách phù hợp khi cần học từ nhiều chính sách khác
+ nhau hoặc khi sử dụng kiến thức đã học từ các bài toán tương tự.
+ Điều này giúp tối ưu hóa việc khám phá và khai thác thông tin từ các chính
+ sách khác nhau.
+\end_layout
+
+\begin_layout Subsection
+Thuật toán Q-Learning
+\end_layout
+
+\begin_layout Standard
+Q-Learning là một phương pháp dựa trên giá trị ngoài chính sách (off-policy)
+ trong lĩnh vực học tăng cường.
+ Nó sử dụng phương pháp học Temporal Difference (TD) để huấn luyện hàm giá
+ trị - hành động của mình.
+\end_layout
+
+\begin_layout Standard
+Phương pháp dựa trên giá trị trong Q-Learning nhằm tìm chính sách tối ưu
+ một cách gián tiếp bằng cách đào tạo một hàm giá trị hoặc hàm giá trị -
+ hành động.
+ Hàm giá trị - hành động này sẽ cho biết giá trị của từng trạng thái hoặc
+ từng cặp hành động - trạng thái, tức là giá trị Q(s, a) cho biết giá trị
+ của hành động a khi ở trạng thái s.
+\end_layout
+
+\begin_layout Standard
+Phương pháp TD trong Q-Learning cho phép cập nhật hàm giá trị - hành động
+ của tác tử sau mỗi bước tương tác thay vì chỉ ở cuối mỗi episode.
+ Điều này giúp tác tử học trực tuyến và cập nhật liên tục từ dữ liệu thực
+ tế thu thập được trong quá trình tương tác với môi trường.
+\end_layout
+
+\begin_layout Standard
+Trong Q-Learning, hàm Q (Q-function) đóng vai trò quan trọng.
+ Đây là một hàm giá trị - hành động (value-action function) xác định giá
+ trị của việc ở một trạng thái cụ thể và thực hiện một hành động cụ thể
+ ở trạng thái đó.
+ Nó xuất phát từ "Quality" của hành động ở trạng thái đó.
+ Bên trong hàm Q là một bảng Q, một bảng trong đó mỗi ô tương ứng với một
+ giá trị cho cặp hành động - trạng thái.
+ Khi quá trình đào tạo hoàn tất, ta sẽ có hàm Q tối ưu.
+ Với hàm Q tối ưu, ta có thể dễ dàng xác định hành động tốt nhất để thực
+ hiện ở mỗi trạng thái, từ đó đạt được chính sách tối ưu.
+\end_layout
+
+\begin_layout Standard
+Ban đầu, bảng Q sẽ được khởi tạo là các giá trị mặc định (thường là 0).
+ Khi Agent khám phá môi trường và chúng ta cập nhật bảng Q, nó sẽ cung cấp
+ cho chúng ta chính sách ngày càng tối ưu hơn.
+\end_layout
+
+\begin_layout Standard
+Thuật toán Q-Learning: 
+\end_layout
+
+\begin_layout Itemize
+Bước 1: Khởi tạo bảng Q.
+ Chúng ta cần khởi tạo bảng Q cho từng cặp hàng động-trạng thái (Hầu hết
+ thời gian, chúng ta khởi tạo các giá trị bằng 0) 
+\end_layout
+
+\begin_layout Itemize
+Bước 2: Chọn một hành động bằng cách sử dụng chiến lược tham lam epsilon.
+ Chiến lược tham lam của epsilon là một chính sách xử lý sự đánh đổi giữa
+ thăm dò và khai thác 
+\end_layout
+
+\begin_layout Itemize
+Bước 3: Thực hiện hành động 
+\begin_inset Formula $A_{t}$
+\end_inset
+
+, nhận phần thưởng 
+\begin_inset Formula $R_{t+1}$
+\end_inset
+
+ và trạng thái tiếp theo 
+\begin_inset Formula $S_{t+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Bước 4: Cập nhật 
+\begin_inset Formula $Q\left(S_{t},A_{t}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ý tưởng là, với giá trị ban đầu 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Với xác suất 
+\begin_inset Formula $1-\epsilon$
+\end_inset
+
+: chúng ta thực hiện việc khai thác (nghĩa là Agent chọn hành động có giá
+ trị cặp hành động – trạng thái cao nhất).
+\end_layout
+
+\begin_layout Itemize
+Với xác suất 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+: chúng ta thực hiện việc tham dò (thử hành động ngẫu nhiên).
+ 
+\end_layout
+
+\begin_layout Standard
+Khi bắt đầu quá trình đào tạo trong Q-Learning, ta thường sẽ sử dụng một
+ giá trị epsilon cao (được ký hiệu là epsilon, 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+) cho tham số được gọi là "epsilon-greedy policy".
+ Tham số epsilon xác định xác suất mà agent thực hiện khám phá (exploration)
+ thay vì khai thác (exploitation).
+ Khi epsilon cao, agent có xu hướng thực hiện các hành động ngẫu nhiên để
+ khám phá các hành động mới và thu thập thông tin về môi trường.
+\end_layout
+
+\begin_layout Standard
+Khi chúng ta bắt đầu đào tạo với epsilon cao, hầu hết thời gian agent sẽ
+ khám phá.
+ Việc này giúp tác tử khám phá ra các hành động tiềm năng tốt hơn và giúp
+ cải thiện hàm giá trị - hành động Q nhanh chóng.
+ Dần dần, khi quá trình đào tạo tiếp tục và hàm giá trị - hành động Q ngày
+ càng tốt hơn, ta có thể giảm dần giá trị epsilon theo một lịch trình xác
+ định.
+ Giảm dần epsilon có ý nghĩa là ta ngày càng giảm xác suất thực hiện các
+ hành động ngẫu nhiên (khám phá) và tăng xác suất thực hiện các hành động
+ được cho là tốt nhất hiện tại (khai thác).
+ Khi hàm giá trị - hành động Q ngày càng cải thiện và gần tới tối ưu, ta
+ cần ít việc khám phá hơn và tập trung vào khai thác kiến thức đã học để
+ đạt được hiệu suất tối đa.
+ Quá trình giảm dần epsilon trong quá trình đào tạo giúp tác tử dần chuyển
+ từ giai đoạn khám phá mạnh mẽ sang giai đoạn khai thác thông tin đã học
+ một cách hiệu quả.
+ Điều này giúp đảm bảo rằng agent có thể học tối ưu và đạt được chính sách
+ tốt trong khi vẫn duy trì khả năng khám phá và khả năng thích nghi với
+ các thay đổi trong môi trường.
+\end_layout
+
+\begin_layout Standard
+Giống với TD Learning, khi thực hiện cập nhật TD, chúng ta sử dụng phần
+ thưởng ngay lập tức (immediate reward) 
+\begin_inset Formula $r_{t+1}$
+\end_inset
+
+ cộng với giá trị chiết khấu của trạng thái tiếp theo.
+ Giá trị chiết khấu được tính bằng cách tìm hành động tối đa hóa hàm giá
+ trị Q hiện tại ở trạng thái tiếp theo.
+ Trạng thái tiếp theo được chọn dựa trên hành động tốt nhất được dự đoán
+ bởi hàm giá trị Q.
+ Cách thức tính giá trị chiết khấu giúp tạo ra mục tiêu TD (TD target),
+ tức là giá trị mà chúng ta muốn dự đoán và cập nhật hàm giá trị Q.
+ Giá trị chiết khấu là một yếu tố quan trọng trong việc học từ các bước
+ tương tác riêng lẻ mà không cần chờ đến cuối mỗi episode.
+ Nó cho phép học trực tuyến (online learning) và cập nhật liên tục sau mỗi
+ bước tương tác, giúp giảm số lượng tương tác và thời gian học so với việc
+ sử dụng toàn bộ tập dữ liệu một cách đồng thời.
+ Sự kết hợp của phần thưởng ngay lập tức và giá trị chiết khấu trong mục
+ tiêu TD giúp agent tự học các chiến lược tối ưu cho việc tối đa hóa phần
+ thưởng tích lũy trong tương lai.
+ Điều này cho phép agent học một cách hiệu quả và thích ứng với môi trường
+ mà không cần biết trước về cấu trúc hoặc quy tắc chính xác của môi trường.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V(S_{t})←V(S_{t})+α\left[R_{t+1}+\gamma*V\left(S_{t+1}\right)-V\left(S_{t}\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vì vậy công thức cập nhật Q(S_t,A_t) được diễn ra như sau:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Q(S_{t},A_{t})←Q(S_{t},A_{t})+α\left[R_{t+1}+\gamma*max\left[Q\left(S_{t+1},a\right)\right]-Q(S_{t},A_{t})\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Điều này có nghĩa là để cập nhật 
+\begin_inset Formula $Q(S_{t},A_{t})$
+\end_inset
+
+ chúng ta cần 
+\begin_inset Formula $S_{t},A_{t},r_{t+1},S_{t+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Để cập nhật giá trị Q của chúng tôi tại một cặp hành động – trạng thái nhất
+ định, chúng ta sử dụng mục tiêu TD.
+\end_layout
+
+\begin_layout Itemize
+Khi nhận được phần thưởng sau khi thực hiện hành động 
+\begin_inset Formula $r_{t+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Để có được giá trị cặp hành động trạng thái tốt nhất cho trạng thái tiếp
+ theo, chúng ta sử dụng chính sách tham lam để chọn hành động tốt nhất tiếp
+ theo.
+ Lưu ý rằng đây không phải là chính sách tham lam của epsilon, chính sách
+ sẽ luôn thực hiện hành động có giá trịnh hành đồng trạng thái cao nhất.
+\end_layout
+
+\begin_layout Standard
+Sau quá trình cập nhật Q, chúng ta bắt đầu trạng thái mới và chọn lại hành
+ động của mình bằng chính sách tham lam epsilon.
+\end_layout
+
+\begin_layout Subsection
+Thuật toán Deep Q-Learning.
+\end_layout
+
+\begin_layout Subsubsection
+Mạng thần kinh nhân tạo.
+\end_layout
+
+\begin_layout Standard
+Mạng nơ-ron nhân tạo (Artificial Neural Network - ANN) là một hệ thống tính
+ toán được lấy cảm hứng từ cấu trúc và hoạt động của hệ thống thần kinh
+ của con người.
+ Đây là một trong những kỹ thuật phổ biến nhất được ứng dụng rất rộng rãi
+ trong đời sống từ những ứng dụng nhận diện hình ảnh, giao dịch chứng khoán
+ tự động, hệ thống dịch máy, nhận dạng giọng nói,...
+ Một mạng nơ ron nhân tạo được cấu thành từ các nơ ron nhân tạo được gọi
+ là các node hay unit.
+ Các kết nối của các nơ ron này với nhau thì cũng tương ứng như trong bộ
+ nào con người gồm các nơ ron và các khớp thần kinh để nối các nơ ron với
+ nhau.
+ Một nơ ron nhân tạo sẽ nhận tín hiệu ở nơ ron phía trước nó thông qua khớp
+ thần kinh.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mô hình mạng thần kinh nhân tạo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Graphics
+	filename ../../../Report/image/ANN-model.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Trong mạng thần kinh nhân tạo, tín hiệu được truyền đi là một số thực, mỗi
+ khớp nối 2 nơ ron với nhau được gọi là một cạnh.
+ Nơ ron và cạnh có một khái niệm được gọi là trọng số - weight, mỗi một
+ cạnh sẽ có một trọng số khác nhau để thể hiện tầm quan trọng của kết nối
+ đó.
+ Thông thương, trong một mạng nơ ron thì các nơ ron sẽ được ra thành các
+ lớp - layer và được kết nối với nhau, với mỗi layer sẽ có nhiệm vụ biến
+ đổi dữ liệu khác nhau dựa trên giá trị đầu vào.
+ Tín hiệu được truyền từ lớp đầu tiên cho tới layer 2, layer 3, ..., layer
+ cuối cùng.
+ Layer đầu tiên được gọi là input layer nhận dữ liệu đầu vào của mô hình,
+ mỗi nút ở lớp này biểu thị cho một thuộc tính hoặc một đặc trưng của dữ
+ liệu đầu vào.
+ Layer cuối cùng được gọi là output layer lớp chứa các nút biểu thị cho
+ đầu ra dự đoán của mô hình, số lượng nút trong lớp này phụ thuộc vào loại
+ tác vụ mà mạng nơ-ron đang được huấn luyện để thực hiện (phân loại, dự
+ đoán số, dự đoán chuỗi thời gian, v.v.).
+ Ở giữa sẻ có một hoặc nhiều các layer khác nhau được gọi là hidden layer
+ là các lớp nằm giữa lớp đầu vào và lớp đầu ra, không có sự tương tác trực
+ tiếp với dữ liệu đầu vào và đầu ra, các lớp ẩn giúp mô hình học các biểu
+ diễn phức tạp và trừu tượng của dữ liệu..
+ Các mạng nơ ron được sẽ được học từ các ví dụ - example, mỗi một ví dụ
+ là một cặp giữa input và output, đây là tập hợp dữ liệu để training cho
+ mạng nơ ron.
+ Training là một tập các bước được lặp đi lặp lại bao gồm đầu tiên mạng
+ nơ ron sẽ chuyển hóa input thành một output bất kì - actual output, output
+ sau đó sẽ được so sánh giá trị output thực sự mong muốn - target output.
+ Mục tiêu của quá trình training là sẽ thay đổi trọng số ở trên các cạnh
+ để actual output gần bằng với target output, để làm như vậy, ở mỗi bước
+ training, cần phải tính toán sự khác biệt giữa actual output và target
+ output để quay lại và sửa các trọng số cạnh để ở các bước training tiếp
+ theo giá trị actual output gần bằng target output nhất có thể.
+ Để thể hiện sự khác biệt giữa actual output và target output trên một example
+ ta có khái niệm 
+\series bold
+cost
+\series default
+, nhưng để có thể phân biệt sự khác biệt tổng thể tổng thể trên toàn bộ
+ tập dữ liệu training thì ở đây đưa ra khái niệm 
+\series bold
+loss, 
+\series default
+mục đích traning ở đây là làm sao để giảm loss xuống mức tối thiểu để actual
+ output gần bằng target output.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+loss=\frac{1}{m}*\sum_{i=1}^{m}cost_{i}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Trong một nơ ron, gồm 2 thành phần chính bao gồm tổng trọng số (weighted
+ sum) và hàm kích hoạt (activation function).
+ Tổng trọng số trong một nơ-ron đơn giản là kết quả của việc tính tổng của
+ các đầu vào nhân với các trọng số tương ứng của chúng.
+ Các đầu vào được ký hiệu là 
+\begin_inset Formula $x₁,x₂,...,xᵢ,$
+\end_inset
+
+ và các trọng số tương ứng là 
+\begin_inset Formula $w₁,w₂,...,wᵢ.$
+\end_inset
+
+ Tổng trọng số được tính bằng công thức: 
+\begin_inset Formula 
+\begin{equation}
+sum=x₁*w₁+x₂*w₂+...+xᵢ*wᵢ
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Các trọng số trong một mạng nơ-ron nhân tạo là các tham số học được trong
+ quá trình huấn luyện, và chúng quyết định tầm quan trọng của từng đặc trưng
+ đầu vào đối với kết quả đầu ra của nơ-ron.
+ Sau khi tính toán tổng trọng số, kết quả này được đưa qua một hàm kích
+ hoạt.
+ Hàm kích hoạt giúp giới hạn đầu ra của nơ-ron trong một khoảng nhất định
+ và tạo tính phi tuyến tính cho mô hình.
+ Điều này cho phép mạng nơ-ron có khả năng học các biểu diễn phức tạp và
+ giải quyết các vấn đề phi tuyến.
+ Một số hàm kích hoạt phổ biến trong mạng nơ-ron nhân tạo bao gồm:
+\end_layout
+
+\begin_layout Itemize
+Hàm Sigmoid: 
+\begin_inset Formula $f(z)=\frac{1}{1+e^{-z}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Hàm ReLU (Rectified Linear Unit): 
+\begin_inset Formula $f(z)=max(0,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Hàm Tanh: 
+\begin_inset Formula $f(z)=\frac{e^{z}-e^{-z}}{e^{z}+e^{-z}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Hàm Softmax: Được sử dụng cho lớp đầu ra trong bài toán phân loại đa lớp.
+\end_layout
+
+\begin_layout Standard
+Kết hợp tổng trọng số và hàm kích hoạt cho phép mô hình nơ-ron tính toán
+ đầu ra dự đoán dựa trên đầu vào và các trọng số đã học.
+ Quá trình này được lặp lại nhiều lần trong mạng nơ-ron để thực hiện các
+ tác vụ học máy như phân loại, dự đoán, hay nhận diện mẫu.
+\end_layout
+
+\begin_layout Standard
+Trong một mạng nơ ron, các nơ ron được chia thành nhiều lớp khác nhau, giữa
+ các layer được kết nối với nhau theo nhiều kiểu.
+ Kết nối fully connected layer (hay còn gọi là Dense Layer) là loại kết
+ nối tất cả các nơ-ron trong một lớp được kết nối với tất cả các nơ-ron
+ trong lớp trước đó và lớp sau đó.
+ Điều này đồng nghĩa với việc mỗi đầu ra của lớp trước đó được kết nối đến
+ mỗi đầu vào của lớp tiếp theo qua các liên kết trọng số.
+ Convolutional Layer là một loại lớp được sử dụng phổ biến trong mạng nơ-ron
+ sâu (Deep Neural Networks - DNNs) đối với xử lý ảnh và thị giác máy tính.
+ Trong Convolutional Layer, các nơ-ron được kết nối một cách local, nghĩa
+ là mỗi nơ-ron chỉ kết nối với một phần của dữ liệu đầu vào (patch) thông
+ qua các bộ lọc (filter).
+ Việc này cho phép mô hình nhận diện các đặc trưng cục bộ trong dữ liệu
+ ảnh.
+ Recurrent Layer được sử dụng trong xử lý dữ liệu chuỗi và dữ liệu có tính
+ thời gian.
+ Trong Recurrent Layer, các nơ-ron được kết nối với chính nó qua các trạng
+ thái ẩn, tạo thành một vòng lặp trong mạng.
+ Điều này cho phép mạng nơ-ron có khả năng lưu trữ thông tin từ quá khứ
+ và sử dụng lại thông tin đó trong việc xử lý dữ liệu hiện tại.
+ Pooling Layer thường được sử dụng sau Convolutional Layer để giảm kích
+ thước của đầu ra và giảm lượng tính toán trong mạng.
+ Trong Pooling Layer, các nơ-ron sẽ thực hiện một phép gom nhóm (max pooling
+ hoặc average pooling) trên các đặc trưng gần nhau.
+ Ngoài các kiểu kết nối nói trên, còn có nhiều kiểu kiến trúc mạng nơ-ron
+ khác nhau như mạng nơ-ron tái tạo (Autoencoders), mạng nơ-ron biểu diễn
+ (Recurrent Neural Networks - RNNs), mạng nơ-ron chuyển đổi (Transformer),
+ và nhiều kiến trúc khác nữa, tùy vào bài toán cụ thể và yêu cầu của ứng
+ dụng.
+\end_layout
+
+\begin_layout Standard
+Trong mạng thần kinh, khái niệm "propagation" thường liên quan đến hai khái
+ niệm quan trọng là "Forward Propagation" và "Backpropagation".
+ Forward propagation là quá trình tính toán đầu ra của mạng nơ-ron từ đầu
+ vào cho tới lớp đầu ra thông qua các lớp ẩn.
+ Trong quá trình này, dữ liệu đầu vào được đưa vào lớp đầu vào, sau đó lan
+ truyền qua mạng thông qua các lớp ẩn với việc tính toán tổng trọng số và
+ áp dụng hàm kích hoạt ở từng nơ-ron.
+ Cụ thể, các bước của Forward Propagation trong một mạng nơ-ron bao gồm:
+\end_layout
+
+\begin_layout Itemize
+Đưa dữ liệu đầu vào vào lớp đầu vào (Input layer).
+ 
+\end_layout
+
+\begin_layout Itemize
+Tính toán tổng trọng số tại từng nơ-ron trong lớp ẩn bằng cách nhân các
+ đầu vào với các trọng số tương ứng và cộng lại.
+ 
+\end_layout
+
+\begin_layout Itemize
+Áp dụng hàm kích hoạt lên kết quả tổng trọng số để tạo ra đầu ra của nơ-ron
+ trong lớp ẩn.
+ 
+\end_layout
+
+\begin_layout Itemize
+Lặp lại quá trình tính toán cho tới khi đạt được đầu ra dự đoán ở lớp cuối
+ cùng (Output layer)
+\end_layout
+
+\begin_layout Standard
+Backpropagation là quá trình điều chỉnh các trọng số của mạng nơ-ron để
+ giảm sai số giữa đầu ra dự đoán và giá trị thực tế của dữ liệu huấn luyện.
+ Quá trình này giúp cập nhật trọng số sao cho mạng nơ-ron học được cách
+ dự đoán chính xác hơn dựa trên dữ liệu huấn luyện.
+ Cụ thể, các bước của Backpropagation trong một mạng nơ-ron bao gồm:
+\end_layout
+
+\begin_layout Itemize
+Tính toán sai số (loss) giữa đầu ra dự đoán và giá trị thực tế bằng cách
+ sử dụng hàm mất mát (loss function).
+ 
+\end_layout
+
+\begin_layout Itemize
+Lan truyền ngược lỗi từ lớp đầu ra về lớp đầu vào, tính toán đạo hàm của
+ hàm mất mát theo từng trọng số.
+ 
+\end_layout
+
+\begin_layout Itemize
+Sử dụng đạo hàm đã tính được để cập nhật các trọng số sao cho giảm sai số.
+ 
+\end_layout
+
+\begin_layout Itemize
+Lặp lại quá trình Forward Propagation và Backpropagation nhiều lần trong
+ quá trình huấn luyện mạng nơ-ron để điều chỉnh các trọng số sao cho mô
+ hình học tốt hơn.
+\end_layout
+
+\begin_layout Standard
+Quá trình Forward Propagation và Backpropagation cùng với việc cập nhật
+ các trọng số là cơ bản trong việc huấn luyện mạng nơ-ron để thực hiện các
+ tác vụ học máy như phân loại, dự đoán, hay nhận diện mẫu.
+\end_layout
+
+\begin_layout Standard
+Nhiệm vụ của Backpropagation là làm giảm giá trị hàm loss xuống sau những
+ bước học tiếp theo.
+ Để điều chỉnh giá trị của một hàm số giảm xuống ta sử dụng thuật toán tối
+ ưu Gradient Descent.
+ Ý tưởng chính của Gradient Descent là dựa vào đạo hàm của hàm mất mát để
+ điều chỉnh từng tham số trong một hướng và mức độ phù hợp để giảm thiểu
+ sai số.
+ Thuật toán Gradient Descent bắt đầu bằng việc khởi tạo ngẫu nhiên các giá
+ trị ban đầu cho các tham số của mô hình.
+ Giả sử chúng ta có một mô hình với các tham số 
+\begin_inset Formula $θ=[θ_{1},θ_{2},...,θ_{r}]$
+\end_inset
+
+, trong đó r là số lượng tham số trong mô hình.
+ Mục tiêu của Gradient Descent là tìm giá trị của các tham số 
+\begin_inset Formula $θ$
+\end_inset
+
+ sao cho hàm mất mát 
+\begin_inset Formula $J(θ)$
+\end_inset
+
+ đạt giá trị nhỏ nhất.
+ Đầu tiên, khởi tạo giá trị ban đầu cho các tham số 
+\begin_inset Formula $θ:$
+\end_inset
+
+ 
+\begin_inset Formula $θ_{0}=[θ_{01},θ_{02},...,θ_{0r}$
+\end_inset
+
+].
+ Sau đó, nó sử dụng quá trình lan truyền tiến (Forward Propagation) để tính
+ toán đầu ra dự đoán của mô hình dựa trên các giá trị tham số này: 
+\begin_inset Formula $y_{hat}=f(X,θ_{0})$
+\end_inset
+
+.
+ Tiếp theo, thuật toán tính toán giá trị mất mát bằng cách so sánh đầu ra
+ dự đoán với giá trị thực tế, đo lường mức độ sai lệch giữa chúng: 
+\begin_inset Formula $J(θ_{0})=loss(y,y_{hat}).$
+\end_inset
+
+ Quá trình quan trọng tiếp theo là tính toán gradient của hàm mất mát theo
+ từng tham số.
+ Gradient chính là vector đạo hàm của hàm mất mát, cho biết hướng và độ
+ lớn mà chúng ta nên điều chỉnh các tham số để giảm thiểu mất mát: 
+\begin_inset Formula $\frac{∂J(θ_{0})}{∂θ_{j}}$
+\end_inset
+
+.
+ Điều này có nghĩa là chúng ta di chuyển theo hướng ngược với đạo hàm để
+ tiến gần tới điểm tối ưu.
+ Khi đã tính được gradient, thuật toán sử dụng một siêu tham số quan trọng
+ gọi là Learning Rate (tỷ lệ học).
+ Learning Rate xác định độ lớn của bước đi mỗi lần cập nhật tham số.
+ Nếu Learning Rate quá lớn, thuật toán có thể bị dao động quanh điểm tối
+ ưu.
+ Nếu Learning Rate quá nhỏ, quá trình học diễn ra chậm chạp.
+ Do đó, cần chọn một Learning Rate phù hợp để thuật toán hội tụ nhanh chóng
+ và ổn định.
+ Cuối cùng, thuật toán sử dụng gradient và learning rate để cập nhật các
+ tham số của mô hình:
+\begin_inset Formula $θ_{1}=θ_{0}-α*∇J(θ_{0})$
+\end_inset
+
+, trong đó, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $∇J(θ_{0})$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ là vector gradient của hàm mất mát 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $J(θ_{0})$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ theo các tham số 
+\begin_inset Formula $θ_{0}$
+\end_inset
+
+..
+ Quá trình này lặp đi lặp lại cho đến khi đạt được điều kiện dừng (ví dụ:
+ số lượng epoch đủ hoặc sai số nhỏ hơn một giá trị ngưỡng).
+\end_layout
+
+\begin_layout Standard
+Đối với mô hình mạng thần kinh nơ ron, phương thức học cũng sẽ làm ảnh hưởng
+ tới kết quả đầu ra của mô hình.
+ Đối với phương pháp học Stochastic, hay còn gọi là Online Learning, đặc
+ trưng bởi việc cập nhật trọng số sau mỗi điểm dữ liệu huấn luyện duy nhất.
+ Điều này cho phép mô hình cập nhật liên tục khi nhận dữ liệu mới và thích
+ hợp với tập dữ liệu lớn.
+ Tuy nhiên, phương pháp này thường có sự dao động lớn và không hội tụ nhanh
+ chóng đến giá trị tối ưu.
+ Trong khi đó, Batch Learning là phương pháp cập nhật trọng số sau khi tính
+ toán gradient dựa trên toàn bộ tập dữ liệu huấn luyện.
+ Việc này tạo ra sự ổn định và chắc chắn trong quá trình học và đảm bảo
+ hội tụ nhanh chóng tới điểm tối ưu.
+ Tuy nhiên, Batch Learning yêu cầu nhiều bộ nhớ để xử lý toàn bộ tập dữ
+ liệu, điều này có thể hạn chế khi làm việc với tập dữ liệu lớn.
+\end_layout
+
+\begin_layout Subsubsection
+Deep Q-learning
+\end_layout
+
+\begin_layout Standard
+Deep Q-Learning là một phương pháp học tăng cường tự động học chính sách
+ cho các tác tử trong môi trường tương tác.
+ Cơ sở của thuật toán là hàm giá trị Q-value function, mà mô tả giá trị
+ dự kiến mà tác tử sẽ đạt được khi thực hiện một hành động cụ thể trong
+ một trạng thái cụ thể.
+ Trong DQL, mạng nơ-ron được sử dụng để ước lượng hàm giá trị Q-value function,
+ thay vì sử dụng bảng trạng thái-hành động như trong Q-Learning truyền thống.
+ Điều này giúp DQL đạt được hiệu suất cao hơn và giải quyết các bài toán
+ có không gian trạng thái lớn.
+ Quy trình quyết định Markov là một công thức toán học được sử dụng trong
+ RL và MDP thỏa mãn thuộc tính Markov đã được nêu rõ trong mục 4.2.4.
+ Ở đây, hàm giá trị Q sẽ được xấp xỉ bằng một hàm gần đúng để ước tính hành
+ động: 
+\begin_inset Formula $Q\left(s,a,\theta\right)\approx Q^{*}\left(s,a\right)$
+\end_inset
+
+và công cụ được sử dụng ở đây là mạng thần kinh nơ-ron nên được gọi là deep
+ Q-learing.
+ Trong trường hợp này, tham số 
+\begin_inset Formula $\theta$
+\end_inset
+
+ được xác định bởi các các trọng số của mạng thần kinh nơ-ron.
+ Với cách xấp xỉ trên, để tìm ra chính sách tối ưu: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Q^{*}\left(s,a\right)=E_{s'\sim\varepsilon}\left[r+\gamma*max_{a'}Q*\left(s',a'\right)|s,a\right]
+\end{equation}
+
+\end_inset
+
+Ở đây, ta có loss function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{i}(\text{\ensuremath{\theta_{i})=E_{s,a\sim\rho(.)}\left[\left(y_{i}-Q(s,a;\theta_{i}\right)^{2}\right]}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+trong đó: 
+\begin_inset Formula $y_{i}=E_{s'\sim\varepsilon}\left[r+\gamma*max_{a'}Q\left(s',a';\theta_{i-1}\right)|s,a\right]$
+\end_inset
+
+ là phương trình Bellman
+\end_layout
+
+\begin_layout Standard
+Vì vậy, để cố gắng giảm thiểu loss function và sau đó Backpropagation để
+ cập nhật giá trị thì cần đạo hàm loss function theo tham số mạng 
+\begin_inset Formula $\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\nabla_{\theta_{i}}L_{i}(\theta_{i})=E_{s,a\sim\rho(.);s'\sim\varepsilon}\left[\left(r+\gamma*max_{a'}Q\left(s',a';\theta_{i-1}\right)-Q\left(s,a;\theta_{i}\right)\right)*\nabla_{\theta_{i}}Q\left(s,a,\theta_{i}\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Việc đạo hàm này lặp đi lặp lại cho tới khi giá trị hàm Q gần hơn với giá
+ trị mục tiêu mong muốn.
+\end_layout
+
+\begin_layout Standard
+Trong truyền thống Q-learning, các cặp trạng thái-hành động được trích xuất
+ ngẫu nhiên từ dữ liệu trực tiếp mỗi lần khi tác tử thực hiện một bước trong
+ môi trường.
+ Tuy nhiên, việc này có thể gây hiệu ứng tương tác giữa các trạng thái liên
+ tiếp và dẫn đến không ổn định khi huấn luyện.
+ Kỹ thuật Experience Replay giải quyết vấn đề này bằng cách lưu trữ toàn
+ bộ các cặp trạng thái-hành động mà tác tử đã trải qua trong quá khứ vào
+ một bộ nhớ đệm (replay buffer).
+ Sau đó, một lô mẫu ngẫu nhiên từ bộ nhớ đệm này được chọn để huấn luyện
+ mạng nơ-ron trong mỗi bước cập nhật.
+ Khi tác tử thực hiện các hành động trong môi trường và quan sát các trạng
+ thái tiếp theo cũng như phần thưởng tương ứng, các cặp trạng thái-hành
+ động được thu thập.
+ Thay vì cập nhật mô hình mỗi lần thu thập một cặp trạng thái-hành động
+ mới, kỹ thuật Experience Replay cho phép lưu trữ toàn bộ các cặp trạng
+ thái-hành động đã trải qua vào một bộ nhớ đệm (replay buffer).
+ Sau đó, trong mỗi bước cập nhật mô hình, một lô mẫu (batch) ngẫu nhiên
+ từ bộ nhớ đệm được lựa chọn để huấn luyện mạng nơ-ron.
+ Việc này giúp tránh hiện tượng tương tác giữa các trạng thái liên tiếp
+ và cải thiện tính ổn định của quá trình huấn luyện.
+ Đồng thời, việc tái sử dụng dữ liệu đã trải qua cũng giúp tận dụng tốt
+ hơn khả năng tính toán của máy tính.
+ Kết hợp với mạng nơ-ron, kỹ thuật Experience Replay giúp Deep Q-Learning
+ có khả năng học hiệu quả và ổn định hơn trong nhiều ứng dụng, chẳng hạn
+ trong nhận diện hình ảnh, chơi trò chơi điện tử, tự động lái xe, và nhiều
+ bài toán học tăng cường khác.
+\end_layout
+
+\begin_layout Subsection
+Đánh giá thuật toán.
+\end_layout
+
+\begin_layout Section
+Mô hình thực nghiệm.
+\end_layout
+
+\begin_layout Subsection
+Dữ liệu đầu vào
+\end_layout
+
+\begin_layout Standard
+Trong báo cáo này, sử dụng dữ liệu về mô hình mạng từ thư viện SNDlib (Network
+ Design Library for Optical Networks) nhằm đảm bảo tính chính xác và đáng
+ tin cậy của kết quả.
+ SNDlib là một thư viện mã nguồn mở dùng để nghiên cứu và mô phỏng các bài
+ toán liên quan đến thiết kế và quản lý mạng truyền dẫn quang.
+\end_layout
+
+\begin_layout Standard
+Ở đây đã lựa chọn ba mô hình mạng đại diện từ SNDlib, bao gồm mô hình mạng
+ Abilene, mô hình mạng giul39 và mô hình mạng brain.
+ Sự lựa chọn này nhằm bao quát toàn diện các trường hợp xảy ra trong quá
+ trình mô phỏng bài toán.
+\end_layout
+
+\begin_layout Standard
+Mô hình mạng Abilene được chọn do tính đơn giản của nó, chỉ gồm 11 nút mạng,
+ điều này giúp cho quá trình mô phỏng nhanh chóng và thuận tiện.
+ Trong khi đó, mô hình mạng giul39 với số lượng trung bình khoảng 39 nút
+ và cấu trúc trung bình phức tạp đã đại diện cho các mạng trung bình kích
+ thước.
+ Mô hình mạng brain là một mô hình mạng phức tạp với đa dạng các yếu tố
+ mạng, từ đó giúp bao quát các trường hợp phức tạp nhất trong quá trình
+ mô phỏng.
+ Ba mô hình này cùng đóng vai trò quan trọng trong việc so sánh và đánh
+ giá hiệu suất của các thuật toán được áp dụng.
+\end_layout
+
+\begin_layout Standard
+Đối với từng mô hình mạng, báo cáo đã xác định và điều chỉnh lại một số
+ thông số có trong tập dữ liệu để đơn giản hóa các bài toán mô phỏng.
+ Điều này giúp cho quá trình thực hiện các bài toán trở nên hiệu quả và
+ dễ dàng.
+ Báo cáo lựa chọn lược bớt một số tham số không cần thiết và sử dụng các
+ tham số sau:
+\end_layout
+
+\begin_layout Itemize
+Danh sách nút (node list): Chứa thông tin về các nút trong mạng.
+ 
+\end_layout
+
+\begin_layout Itemize
+Danh sách cạnh (edge list): Chứa thông tin về các cạnh kết nối giữa các
+ nút.
+ 
+\end_layout
+
+\begin_layout Itemize
+Trọng số của các nút (node weights): Là các giá trị trọng số tương ứng với
+ từng nút trong mạng.
+ 
+\end_layout
+
+\begin_layout Itemize
+Trọng số của các cạnh (edge weights): Là các giá trị trọng số tương ứng
+ với từng cạnh kết nối giữa các nút trong mạng.
+ 
+\end_layout
+
+\begin_layout Itemize
+Thông tin ma trận kề của mô hình mạng (adjacency matrix): Được sử dụng để
+ biểu diễn cấu trúc kết nối giữa các nút trong mạng.
+\end_layout
+
+\begin_layout Standard
+Với việc lựa chọn dữ liệu như trên tin rằng việc sử dụng dữ liệu từ SNDlib
+ cùng với lựa chọn ba mô hình mạng đa dạng sẽ giúp báo cáo này đạt được
+ tính toàn diện và chính xác trong việc nghiên cứu và phân tích các bài
+ toán liên quan đến mạng quang.
+ Các kết quả thu được từ các thuật toán mô phỏng trên các mô hình mạng này
+ sẽ cung cấp thông tin quan trọng và giá trị trong việc hiểu rõ hơn về hiệu
+ suất và hiệu quả của các mạng truyền dẫn quang.
+\end_layout
+
+\begin_layout Subsection
+Các vấn đề tối ưu
+\end_layout
+
+\begin_layout Standard
+Vấn đề tối ưu của bài toán SFC Mapping trên mạng vật lý (PHY) tập trung
+ vào việc tìm cách ánh xạ các dịch vụ trong chuỗi Service Function Chaining
+ lên các tài nguyên của mạng sao cho tối ưu về các yếu tố quan trọng như
+ CPU, RAM và băng thông.
+\end_layout
+
+\begin_layout Standard
+Trong quá trình ánh xạ, việc tối ưu về CPU là một yếu tố then chốt.
+ Bằng cách chọn các node mạng phù hợp và phân chia công việc một cách cân
+ đối, chúng ta có thể đảm bảo rằng các tác vụ và chức năng của dịch vụ được
+ thực hiện hiệu quả trên từng node.
+ Việc phân bổ công việc hợp lý giúp tránh tình trạng quá tải và sử dụng
+ CPU một cách hiệu quả, đồng thời giảm thiểu lãng phí tài nguyên không sử
+ dụng.
+ Tối ưu về RAM là một mục tiêu quan trọng khác trong bài toán SFC Mapping.
+ Bằng cách cân nhắc tỉ mỉ việc cấp phát RAM cho từng node và dịch vụ, chúng
+ ta có thể đảm bảo mỗi node đều đủ dung lượng RAM để thực hiện chức năng
+ và lưu trữ dữ liệu cần thiết.
+ Việc tối ưu này giúp tránh hiện tượng quá tải RAM, một nguyên nhân thường
+ gây giảm hiệu suất và ảnh hưởng tiêu cực đến hoạt động của các node.
+ Đối với dữ liệu đầu vào, mỗi nút được đại diện là một server, các trọng
+ số nút đại diện cho CPU và RAM - tham số cho biết khả năng xử lý của server.
+ Để tối ưu về tài nguyên máy chủ, quá trình mô phỏng sử dụng công thức tính
+ toán sau: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+reward=|c^{s}-c^{v}|
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+trong đó: 
+\begin_inset Formula $reward$
+\end_inset
+
+ là tham số đánh giá việc vị trí VNF được ánh xạ xuống mạng vật lý.
+ 
+\begin_inset Formula $reward$
+\end_inset
+
+ càng cao cho biết việc lựa chọn ánh xạ như vậy càng tốt.
+\end_layout
+
+\begin_layout Standard
+Ngoài ra, việc tối ưu về băng thông cũng đóng góp quan trọng trong quá trình
+ SFC Mapping.
+ Bằng cách chọn các liên kết và ánh xạ các dịch vụ sao cho hợp lý, chúng
+ ta có thể giữ cho việc truyền tải dữ liệu giữa các node trong mạng diễn
+ ra một cách hiệu quả.
+ Điều này đảm bảo rằng các dịch vụ trong chuỗi SFC có thể được truyền tải
+ một cách ổn định và không gây ảnh hưởng đến các dịch vụ khác.
+ Tối ưu về băng thông giúp tránh tình trạng quá tải mạng và đảm bảo sử dụng
+ tài nguyên mạng một cách tiết kiệm.
+ Các VNF có thể ánh xạ bất kì tới nút nào trọng mạng vật lý thỏa mãn việc
+ nút vật lý đó đủ khả năng xử lý VNF và băng thông liên kết khi các VNF
+ được ánh xạ của mạng vật lý được đảm bảo.
+ Đối với báo cáo, khi các VNF ánh xạ cần đảm bảo đi qua ít 
+\begin_inset Formula $hop$
+\end_inset
+
+ - số nút vật lý phải đi qua và các liên kết VNF được ánh xạ xuống các liên
+ kết mạng vật lý phải đảm bảo phù hợp (chọn liên kết vật lý có băng thông
+ lớn hơn hoặc bằng băng thông yêu cầu của liên kết VNF)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+reward=|c^{s}-c^{v}|-\alpha*hop-\beta*(l^{s}-l^{v})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Việc đối mặt với nhiều yếu tố tối ưu trong bài toán SFC Mapping trên mạng
+ vật lý đòi hỏi sự cân nhắc tỉ mỉ và sử dụng các thuật toán tối ưu hóa phù
+ hợp.
+ Kết hợp các giải pháp tối ưu, chúng ta có thể xây dựng mô hình mạng vật
+ lý tối ưu, đáp ứng hiệu quả các yêu cầu và đòi hỏi của các dịch vụ trong
+ chuỗi SFC và tạo ra một mạng vận hành ổn định và hiệu quả.
+\end_layout
+
+\begin_layout Standard
+Khi các SFC được ánh xạ thành công lên mạng vật lý (PHY), tham số "acceptance
+ rate" (tỷ lệ chấp nhận) là một chỉ số quan trọng để đánh giá hiệu suất
+ của quá trình ánh xạ và hiệu quả của thuật toán SFC Mapping.
+ Acceptance rate đo lường tỷ lệ dịch vụ SFC được ánh xạ thành công trên
+ tổng số các dịch vụ SFC đã yêu cầu ánh xạ.
+\end_layout
+
+\begin_layout Standard
+Công thức tính toán acceptance rate như sau:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+acceptance=\frac{A_{T}}{C_{t}}*100\%
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Trong đó, 
+\begin_inset Formula $A_{t}$
+\end_inset
+
+là số lượng SFC được ánh xạ thành công, còn 
+\begin_inset Formula $C_{t}$
+\end_inset
+
+là tổng số SFC yêu cầu được ánh xạ
+\end_layout
+
+\begin_layout Standard
+Ví dụ, nếu có tổng cộng 100 SFC được yêu cầu ánh xạ lên PHY và trong đó
+ có 80 SFC được ánh xạ thành công, thì acceptance rate sẽ là:
+\begin_inset Formula 
+\[
+acceptance=\frac{A_{T}}{C_{t}}*100\%=\frac{80}{100}*100\%=80\%
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tỷ lệ chấp nhận này cho thấy tỷ lệ thành công của quá trình ánh xạ, và càng
+ cao thì quá trình ánh xạ càng hiệu quả.
+ Trong các bài toán SFC Mapping, mục tiêu là tối đa hóa acceptance rate,
+ tức là ánh xạ càng nhiều SFC lên mạng vật lý thành công càng tốt.
+ Việc tăng acceptance rate đồng nghĩa với việc tối ưu hóa việc sử dụng tài
+ nguyên và cải thiện hiệu suất mạng.
+\end_layout
+
+\begin_layout Subsection
+Nhúng mạng ảo dưới dạng quy trình quyết định Markov
+\end_layout
+
+\begin_layout Standard
+Một MDP được gọi là một đoạn từ trạng thái ban đầu đến trạng thái cuối cùng.
+ Do đó, bài toán ánh xạ mạng ảo có thể được mô hình hóa như một quyết định
+ Markov xử lý như một bộ tứ: 
+\begin_inset Formula $\left\{ S,A,P,R\right\} $
+\end_inset
+
+, trong đó 
+\begin_inset Formula $S$
+\end_inset
+
+ đại diện cho trạng thái được thiết lập với trạng thái 
+\begin_inset Formula $Sρ$
+\end_inset
+
+ được biểu thị là trạng thái cuối cùng.
+ Giá trị của phần thưởng ở trạng thái cuối cùng được ký hiệu là 
+\begin_inset Formula $Rρ$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ là tập hành động, 
+\begin_inset Formula $P$
+\end_inset
+
+ là xác suất chuyển trạng thái và 
+\begin_inset Formula $R(s,a)$
+\end_inset
+
+ là phần thưởng của hành động 
+\begin_inset Formula $a$
+\end_inset
+
+ ở trạng thái 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Một quá trình ánh xạ thành công của mỗi virus mạng ảo được gọi là episode.
+ Trong episode, tác nhân bắt đầu thực thi từ trạng thái được chọn ngẫu nhiên
+ cho đến khi đạt đến trạng thái cuối cùng.
+ Vào cuối episode, tác nhân được chuyển ngẫu nhiên sang trạng thái ban đầu
+ mới và bắt đầu tập tiếp theo.
+ Giả sử rằng ở một trạng thái St nhất định, tác nhân chọn một nút vật lý
+ 
+\begin_inset Formula $n^{s}\in N^{S}$
+\end_inset
+
+ để ánh xạ nút ảo 
+\begin_inset Formula $n^{v}\in N^{V}$
+\end_inset
+
+ rồi chuyển sang trạng thái tiếp theo 
+\begin_inset Formula $S_{t+1}$
+\end_inset
+
+.
+ Trạng thái M.
+ tại thời điểm t được định nghĩa là: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{t}=\left(N_{t}^{V}=N_{t-1}^{V}\backslash\left\{ n_{t-1}^{v}\right\} \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Với hành động ở trạng thái t được định nghĩa như sau:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{t}=\left(N_{t}^{S}=N_{t-1}^{S}\backslash\left\{ n_{t-1}^{s}\right\} \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Khi tác nhân chọn một nút mạng vật lý 
+\begin_inset Formula $n^{s}$
+\end_inset
+
+ cho một nút mạng ảo 
+\begin_inset Formula $n^{v}$
+\end_inset
+
+, nó sẽ chuyển sang trạng thái 
+\begin_inset Formula $S_{t+1}$
+\end_inset
+
+.
+ Do đó xác xuất chuyển trạng thái mà tác nhân chọn hành động 
+\begin_inset Formula $A_{t}$
+\end_inset
+
+ chuyển sang trạng thái tiếp theo 
+\begin_inset Formula $S_{\ensuremath{t+1}}$
+\end_inset
+
+ trong trạng thái 
+\begin_inset Formula $S_{t}$
+\end_inset
+
+ được định nghĩa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{r}=(S_{t+1}|n_{t}^{v},n_{t}^{s},S_{t})=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cơ chế chuyển trạng thái và nhận phần thưởng đã được nói rõ ở mục (5.2) tại
+ phương trình (29)(30).
+\end_layout
+
+\begin_layout Subsection
+Triển khai mô phỏng
+\end_layout
+
+\begin_layout Standard
+Trong báo cáo này sử dụng thuật toán Q-learning để giải quyết quy trình
+ Markov.
+ Nó cho phép tác nhân tự động xác định hành vi lý tưởng trong một môi trường
+ cụ thể để tối đa hóa hiệu xuất của nó.
+ Tín hiệu phần thưởng để tác nhân tìm hiểu hành vi của nó, không gian trạng
+ thái mà tác nhân học tập được mô tả là một tập trạng thái S, có thể thực
+ hiện bất kì hành động nào khả thi được mô tả trong tập không gian hành
+ động A.
+ Mỗi khi thực hiện một hành động 
+\begin_inset Formula $a_{t}$
+\end_inset
+
+ ở trạng thái 
+\begin_inset Formula $s_{t}$
+\end_inset
+
+, tác nhân sẽ nhận lại một phần thưởng 
+\begin_inset Formula $r_{t}$
+\end_inset
+
+ tương ứng và quy trình đó lập lại từ trạng thái đầu đến trạng thái cuối
+ cùng (terminal state) của tác nhân.
+ Với mỗi bước chuyển trạng thái như vậy cho đến trạng thái cuối cùng được
+ gọi là một chiến lược 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ Để tìm ra chiến lược tối ưu, hàm giá trị hành động gần đúng Q thường được
+ sử dụng.
+ Sau khi ánh xạ thành công một nút ảo, môi trường sẽ cung cấp giá trị Q
+ cho tác nhân.
+ Ma trận giá trị Q thu được bằng cách xấp xỉ hàm giá trị hành động 
+\begin_inset Formula $Q(s_{t},a_{t})$
+\end_inset
+
+ .
+ Ma trận này tiếp tục được sử dụng trong các episode tiếp theo để nhanh
+ chóng tìm ra chiến lược tối ưu 
+\begin_inset Formula $\pi^{*}$
+\end_inset
+
+ trong phương trình (16) để có tổng phần thưởng đạt được là cao nhất.
+ Trong đó, giá trị Q được biểu diễn như sau:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Q\left(s,a\right)=R\left(s,a\right)+\gamma*max\left(Q\left(s',a'\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Trong đó, 
+\begin_inset Formula $s',a'$
+\end_inset
+
+ lần lượt là trạng thái và hành động tiếp theo.
+ Sau mỗi episode, giá trị Q được cập nhật (27) để có thể hội tụ và tìm ra
+ chiến lược tối ưu.
+\end_layout
+
+\begin_layout Subsubsection
+Thuật toán Q - learning
+\end_layout
+
+\begin_layout Standard
+Quy trình các bước triển khai thuật toán:
+\end_layout
+
+\begin_layout Standard
+Bước 1: Khởi tạo các tham số như tập trạng thái S, tập hành động A, ma trận
+ Q giá trị (s, a), giá trị giảm dần 
+\begin_inset Formula $𝛾$
+\end_inset
+
+, và tỷ lệ học tập 
+\begin_inset Formula $𝛼$
+\end_inset
+
+ dựa trên đầu vào.
+\end_layout
+
+\begin_layout Standard
+Bước 2: Khi nhận được yêu cầu ánh xạ chuỗi dịch vụ, kiểm tra xem tổng số
+ lượng tài nguyên yêu cầu của mỗi chuỗi SFC, tức là số lượng VNF, có vượt
+ quá tổng số lượng tài nguyên còn lại của tất cả các nút vật lý trong các
+ kết nối mạng vật lý hiện tại không.
+ Nếu vượt quá, thực hiện Bước 9; nếu không, tiến hành Bước 3.
+\end_layout
+
+\begin_layout Standard
+Bước 3: Vì xem xét sự cân bằng tải của hệ thống, đưa ra ánh xạ cho đầu chuỗi
+ của chuỗi dịch vụ vào nút vật lý có tải hiện tại nhỏ nhất.
+ Nếu có nhiều hơn một, chọn ngẫu nhiên một trong số đó.
+\end_layout
+
+\begin_layout Standard
+Bước 4: Đối với các VNF sau của một chuỗi dịch vụ duy nhất, tạo ngẫu nhiên
+ một số a trong khoảng từ (0, 1).
+ Nếu a nhỏ hơn giá trị ngưỡng, tiến hành Bước 5, nếu không, thực hiện Bước
+ 6.
+\end_layout
+
+\begin_layout Standard
+Bước 5: Đối với VNF cần ánh xạ, chọn ngẫu nhiên một nút vật lý.
+\end_layout
+
+\begin_layout Standard
+Bước 6: Dựa vào hàm giá trị Q, chọn hành động tốt nhất để ánh xạ VNF lên
+ nút vật lý.
+\end_layout
+
+\begin_layout Standard
+Bước 7: Tính toán giá trị phản hồi R sau khi đặt VNF dựa trên điều kiện
+ của các nguồn tài nguyên mạng vật lý cơ bản, chất lượng dịch vụ (QoS) và
+ công thức (34), và cập nhật hàm giá trị Q theo công thức (27).
+\end_layout
+
+\begin_layout Standard
+Bước 8: Nếu việc ánh xạ của một chuỗi dịch vụ duy nhất đã hoàn tất, thực
+ hiện Bước 10; nếu chưa, quay lại Bước 5.
+\end_layout
+
+\begin_layout Standard
+Bước 9: Từ chối yêu cầu ánh xạ chuỗi dịch vụ.
+\end_layout
+
+\begin_layout Standard
+Bước 10: Kết thúc ánh xạ của chuỗi duy nhất.
+\end_layout
+
+\begin_layout Standard
+Dưới đây là các bước được sử dụng cho quá trình mô phỏng bài toán SFC mapping
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Step 1: Initialization 
+\end_layout
+
+\begin_layout Plain Layout
+
+1: Initialize parameters: state_space, action_space, q_table, 
+\end_layout
+
+\begin_layout Plain Layout
+
+	discount_factor, learning_rate, exploration_rate 
+\end_layout
+
+\begin_layout Plain Layout
+
+2: Initialize the environment (env) for the SFC Mapping problem
+\end_layout
+
+\begin_layout Plain Layout
+
+Step 2: Q-Learning Implementation
+\end_layout
+
+\begin_layout Plain Layout
+
+3: FOR each episode in num_episodes DO     
+\end_layout
+
+\begin_layout Plain Layout
+
+4:  Initialize the initial state and action for the new episode    
+\end_layout
+
+\begin_layout Plain Layout
+
+5:   WHILE not all states are explored DO        	
+\end_layout
+
+\begin_layout Plain Layout
+
+6:    Choose the current state         
+\end_layout
+
+\begin_layout Plain Layout
+
+7:    WHILE no suitable action is found DO           
+\end_layout
+
+\begin_layout Plain Layout
+
+8:     IF random number < exploration_rate THEN            
+\end_layout
+
+\begin_layout Plain Layout
+
+9:      Choose a random action from the action space             			
+\end_layout
+
+\begin_layout Plain Layout
+
+10:    ELSE                 
+\end_layout
+
+\begin_layout Plain Layout
+
+11:     Choose the action with the highest Q-value from the Q table    
+         
+\end_layout
+
+\begin_layout Plain Layout
+
+12:    IF the chosen action satisfies the constraints and limitations DO
+               
+\end_layout
+
+\begin_layout Plain Layout
+
+13:     IF it is the first action in the SFC chain DO                  
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+14:      Calculate and update the reward for the first action          
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+15:     ELSE                     
+\end_layout
+
+\begin_layout Plain Layout
+
+16       Calculate and update the reward for subsequent actions in the SFC
+ chain             
+\end_layout
+
+\begin_layout Plain Layout
+
+17:    END IF            
+\end_layout
+
+\begin_layout Plain Layout
+
+18:    END IF         
+\end_layout
+
+\begin_layout Plain Layout
+
+19:   END WHILE     
+\end_layout
+
+\begin_layout Plain Layout
+
+20:  END WHILE     
+\end_layout
+
+\begin_layout Plain Layout
+
+21:  Update the exploration rate (exploration_rate) based on the current
+ episode
+\end_layout
+
+\begin_layout Plain Layout
+
+22: END FOR
+\end_layout
+
+\begin_layout Plain Layout
+
+Step 3: SFC Mapping Implementation
+\end_layout
+
+\begin_layout Plain Layout
+
+23: Find the maximum value in each row of the Q table 
+\end_layout
+
+\begin_layout Plain Layout
+
+24: Map the SFC chain to the PHY network based on the maximum values found
+\end_layout
+
+\begin_layout Plain Layout
+
+25: Update the weights of the PHY nodes after mapping
+\end_layout
+
+\begin_layout Plain Layout
+
+End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Trong quá trình mô phỏng thuật toán Q-learning, việc tác nhân lựa chọn hành
+ động được thực hiện thông qua cơ chế kết hợp giữa khai thác (exploitation)
+ và khám phá (exploration).
+\end_layout
+
+\begin_layout Standard
+Khi tác nhân đang trong giai đoạn khám phá, nó sẽ thực hiện việc khám phá
+ bằng cách chọn ngẫu nhiên một hành động từ không gian hành động hiện tại.
+ Tỷ lệ khám phá (exploration_rate) được sử dụng để quyết định xem tác nhân
+ sẽ thực hiện khám phá hay không.
+ Nếu số ngẫu nhiên nhỏ hơn tỷ lệ khám phá, tác nhân sẽ chọn một hành động
+ mới mà nó chưa biết hoặc chưa thử nghiệm.
+ Sau khi chọn hành động, nó sẽ loại bỏ hành động này khỏi không gian hành
+ động hiện tại để tránh thực hiện lại hành động đã được chọn trong lần khám
+ phá tiếp theo.
+\end_layout
+
+\begin_layout Standard
+Trong trường hợp tác nhân đang trong giai đoạn khai thác, nó sẽ lựa chọn
+ hành động bằng cách tìm hành động có giá trị Q lớn nhất cho trạng thái
+ hiện tại từ bảng Q table.
+ Điều này giúp tác nhân ưu tiên lựa chọn những hành động đã biết có tiềm
+ năng tốt nhất để đạt được phần thưởng cao nhất trong tương lai.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+  # Exploration: Choose any action in the action space    
+\end_layout
+
+\begin_layout Plain Layout
+
+1: if np.random.rand() < exploration_rate:                     
+\end_layout
+
+\begin_layout Plain Layout
+
+2:   action = np.random.choice(current_action_space)   
+\end_layout
+
+\begin_layout Plain Layout
+
+  # Exploitation: Select the action with the largest Q value in the Q table
+                 
+\end_layout
+
+\begin_layout Plain Layout
+
+3: else:                     
+\end_layout
+
+\begin_layout Plain Layout
+
+4:   action = np.argmax(q_table[current_state]) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nhờ cơ chế kết hợp giữa khai thác và khám phá, tác nhân có thể cân bằng
+ giữa việc tiếp tục khám phá những hành động mới và tối ưu hóa việc khai
+ thác những hành động có giá trị Q cao nhất.
+ Điều này giúp tác nhân nhanh chóng học được chính sách tốt nhất để ánh
+ xạ NFV xuống mạng vật lý một cách hiệu quả, tối ưu hóa việc sử dụng tài
+ nguyên phần cứng và băng thông liên kết giữa các nút.
+\end_layout
+
+\begin_layout Standard
+Khi triển khai mô phỏng thuật toán, một số vấn đề cần được xem xét.
+ Khi nút NFV đầu tiên được ánh xạ xuống nút PHY sau khi kiểm tra các điều
+ kiện, việc ánh xạ có thể diễn ra dễ dàng.
+ Tuy nhiên, khi ánh xạ từ các nút NFV tiếp theo trong mạng SFC, có thể xuất
+ hiện một số vấn đề.
+ Cụ thể, cần kiểm tra từ nút NFV thứ hai được ánh xạ trở đi, đến nút NFV
+ trước đó đã được ánh xạ, xem liệu đường đi giữa hai nút NFV này có đảm
+ bảo yêu cầu về băng thông của liên kết các nút PHY hay không.
+ Điều này đảm bảo rằng việc ánh xạ các nút NFV liên tiếp không gây ra quá
+ tải cho các liên kết mạng PHY.
+ Do đó, cần áp dụng một thuật toán khác để tìm đường đi giữa hai nút NFV
+ liên tiếp và đảm bảo đường đi này là ngắn nhất.
+ Trong bài báo cáo, chúng tôi sử dụng thuật toán Dijkstra để triển khai
+ việc tìm đường đi ngắn nhất giữa hai nút trong mạng.
+\end_layout
+
+\begin_layout Standard
+Khi triển khai thuật toán Dijkstra để tìm đường đi ngắn nhất giữa hai nút
+ mạng, hàm sẽ trả về các thông tin sau:
+\end_layout
+
+\begin_layout Itemize
+Số lượng hop cần phải đi qua: Đây là số lượng nút mạng cần được đi qua trong
+ đường đi ngắn nhất từ nút mạng xuất phát đến nút mạng đích.
+\end_layout
+
+\begin_layout Itemize
+Tổng trọng số của các cạnh phải đi qua: Đây là tổng trọng số của các liên
+ kết giữa các nút mạng trong đường đi ngắn nhất.
+ Trọng số này thể hiện khối lượng tài nguyên cần sử dụng khi đi qua các
+ cạnh mạng.
+\end_layout
+
+\begin_layout Itemize
+Đồ thị đã được cập nhật: Đồ thị này là bản sao của đồ thị ban đầu, nhưng
+ các trọng số của các liên kết giữa các nút mạng đã được cập nhật dựa trên
+ việc ánh xạ NFV xuống PHY.
+ Khi ánh xạ thành công, trọng số của các liên kết tương ứng sẽ giảm đi bằng
+ giá trị tương ứng với yêu cầu tài nguyên của NFV.
+\end_layout
+
+\begin_layout Standard
+Khi ánh xạ một NFV xuống PHY, nút và cạnh của NFV đó sẽ "chiếm dụng" tài
+ nguyên của mạng PHY.
+ Thuật ngữ "chiếm dụng" ở đây thể hiện việc NFV đã sử dụng tài nguyên của
+ mạng PHY để thực hiện các chức năng của nó.
+ Khi ánh xạ một nút NFV, nút PHY tương ứng của mạng cần đáp ứng khả năng
+ xử lý của NFV đó.
+ Do đó, khi ánh xạ thành công, nút PHY tương ứng đó sẽ giảm bớt khả năng
+ xử lý bằng đúng trọng số của nút NFV yêu cầu.
+ Điều này đảm bảo rằng mạng PHY không bị quá tải khi ánh xạ các NFV lên
+ nó.
+ Tương ứng với các liên kết của mạng PHY, liên kết giữa hai nút NFV yêu
+ cần cần băng thông để đáp ứng nhu cầu trao đổi dữ liệu giữa chúng.
+ Khi thuật toán Dijkstra tìm ra đường đi ngắn nhất giữa hai nút NFV được
+ ánh xạ tương ứng với hai nút PHY, băng thông của liên kết giữa hai nút
+ PHY sẽ phải giảm đi và bằng băng thông yêu cầu của liên kết giữa hai nút
+ NFV tương ứng đó.
+ Điều này đảm bảo rằng liên kết giữa hai NFV ánh xạ trên mạng PHY có đủ
+ băng thông để đảm bảo việc trao đổi dữ liệu giữa chúng được thực hiện một
+ cách hiệu quả.
+\end_layout
+
+\begin_layout Standard
+Việc xử lý tín hiệu phần thưởng cũng có đôi chút khác với công thức (34).
+ Ở đây, ngoài việc đánh giá vị trí nút NFV được mapping tương ứng với nút
+ PHY, lựa chọn nút PHY nào càng gần với yêu cầu khả năng xử lý của NFV đó
+ thì sẽ càng trở nên hiệu quả, như vậy sẽ làm tốn ít tài nguyên phần cứng,
+ thì còn phải đánh giá băng thông liên kết giữa các nút được ánh xạ.
+ Khi NFV ánh xạ vào các nút mạng vật lý ở quá xa nhau sẽ làm giảm băng thông
+ tổng thể của mạng vật lý như thế tài nguyên vật lý sẽ giảm xuống nên cần
+ phải tối ưu việc ánh xạ để cho NFV ánh xạ ở các nút mạng vật lý gần nhau
+ nhất có thể.
+ Đối với nút đầu tiên của NFV được ánh xạ thì khi đó tín hiệu phần thưởng
+ sẽ được tính toán bằng công thức dưới đây:
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+reward=1000-(PHY_weights_node[action]-SFC_weights_node[state])
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Đối với nút mạng NFV đầu tiên được ánh xạ thì mình chỉ cần tính toán sự
+ chênh lệch trọng số nút mạng vật lý được ánh xạ với nút mạng ảo yêu cầu.
+ Sự chênh lệch càng lớn thì việc lựa chọn ánh xạ đó sẽ không tốt.
+ Ở đây, tham số 1000 không có một ý nghĩa quá đặc biệt, nó giúp cho tín
+ hiệu reward nhận được càng lớn thì việc ánh xạ nút NFV xuống nút mạng vật
+ lý càng tốt.
+ Từ nút thứ 2 của mạng ảo sẽ có phức tạp hơn vì cần tính toán đường đi ngắn
+ nhất giữa nút mạng này với nút mạng đó, xem xét số hop đi qua, xem xét
+ có đường đi ngắn nhất giữa 2 nút mạng.
+ Việc này đã được tính toán tại thuật toán Dijkstra, thuật toán sẽ xem xét
+ có đường đi ngắn nhất giữa 2 nút mạng được ánh xạ, rằng băng thông tại
+ đường đi ngắn nhất đó có thỏa mãn băng thông yêu cầu của mạng ảo và sẽ
+ trả về số hop đã được đi qua khi các nút mạng ảo được ánh xạ.
+ Dưới đây là công thức tính toán tín hiệu phần thưởng dành cho từ nút mạng
+ ảo thứ 2 trở đi được ánh xạ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+reward=1000-(PHY_weights_node[action]-SFC_weights_node[current_state])-num_hop
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Khi càng đi qua nhiều hop, như vậy việc ánh xạ sẽ trở nên không tốt nên
+ tín hiệu phần thưởng cần được giảm đi để cho thuật toán Q learning đánh
+ giá chất lượng của việc ánh xạ đó.
+\end_layout
+
+\begin_layout Standard
+Sau khi đã chọn được hành động tương ứng với trạng thái đó và tính toán
+ phần thưởng khi tác nhân tương tác với môi trường tại hành động hiện tại
+ khi thực hiện hành động tương ứng, thuật toán cần tính toán giá trị Q cho
+ quá trình tương tác.
+ Công thức tính toán Q được thực hiện đúng theo công thức (27).
+ Ở đây, trong công thức tính toán giá trị có một tham số là giá trị Q cho
+ trạng thái tiếp theo, nhưng đối với trạng thái cuối - nút cuối cùng của
+ NFV cần được ánh xạ thì sẽ không có giá trị Q cho trạng thái tiếp thì khi
+ đó, giá trị Q tại trạng thái cuối sẽ được tính toán theo công thức:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Q(S_{t},A_{t})\leftarrow Q(S_{t},A_{t})+\alpha\left[R_{t+1}-Q(S_{t},A_{t})\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ta coi như giá trị Q cho trạng thái kế bằng 0, như vậy, công thức sẽ được
+ thay đổi như trên.
+\end_layout
+
+\begin_layout Standard
+Trên đây là quá trình triển khai mô phỏng thuật toán Q-learning cho bài
+ toán ánh xạ NFV xuống mạng vật lý, bao gồm việc xử lý tín hiệu phần thưởng
+ và tính toán giá trị Q cho quá trình tương tác giữa tác nhân và môi trường.
+\end_layout
+
+\begin_layout Subsubsection
+Thuật toán Deep Q-learning
+\end_layout
+
+\begin_layout Standard
+Trong Q learning, thuật toán sử dụng bảng Q table là một ma trận của hành
+ động trạng thái (s, a), tác nhân sẽ tương tác với môi trường.
+ Qua mỗi episode, tác nhân sẽ tự học và điều chỉnh bảng Q table sao cho
+ tác nhân tương tác với môi trường một cách tốt nhất.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mô hình Q-learning và Deep Q-learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../../Report/image/compare-q-and-deep-q.jpg
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Các kinh nghiệm tương tác sẽ được lưu trong bảng Q với ma trận dạng 
+\begin_inset Formula $\text{[}SxA\text{]}$
+\end_inset
+
+, với S là không gian trạng thái, A là không gian hành động.
+ Đối với những môi trường có không gian trạng thái, không gian hành động
+ không quá phức tạp, việc lưu trữ kinh nghiệm dưới dạng bảng Q table sẽ
+ không quá phức tạp.
+ Nhưng trong các tình huống thực tế, mạng lưới quy mô lớn có cấu trúc phức
+ tạp.
+ Thuật toán Q-learning gặp vấn đề về khả năng mở rộng khi lưu trữ ma trận
+ Q trong trường hợp tập trạng thái quá lớn.
+ Độ phức tạp không gian tăng nhanh khi quy mô mạng càng lớn.
+ Với quy mô lớn, việc duyệt qua từng trạng thái mất rất nhiều thời gian,
+ khiến thuật toán không thích hợp cho mạng lưới quy mô lớn.
+ Để giải quyết những vấn đề này, ta xem xét việc sử dụng thuật toán cải
+ tiến, gọi là thuật toán Q-learning-DQN, kết hợp Q-learning và mạng nơ-ron.
+ Trạng thái của thuật toán Q-learning có thể được sử dụng làm đầu vào cho
+ mạng nơ-ron.
+ Sau khi học từ mạng nơ-ron, kết quả của quá trình phù hợp hàm sẽ là giá
+ trị Q cho tất cả các hành động.
+ Hành động được lựa chọn dựa trên chiến lược chọn hành động có giá trị Q
+ cao nhất theo thuật toán Q-learning.
+ Sau khi lựa chọn hành động, giá trị phản hồi tương ứng được thu thập.
+ Từ đó, ta có thể tính toán giá trị Q cần được cập nhật và sử dụng nó làm
+ giá trị mục tiêu.
+ Giá trị Q hiện tại được sử dụng làm giá trị thực tế và sai số giữa giá
+ trị mục tiêu và giá trị thực tế được sử dụng làm hàm mất mát.
+ Bằng cách sử dụng huấn luyện mạng nơ-ron sâu, ta có thể xác định hành động
+ tối ưu mà không cần phải duyệt qua tất cả các trạng thái, từ đó giảm thiểu
+ đáng kể độ phức tạp không gian.
+\end_layout
+
+\begin_layout Standard
+Đối với bài toán ánh xạ SFC, quá trình mô phỏng Thuật toán Deep Q-Network
+ (DQN) sử dụng hai mạng nơ-ron quan trọng là mạng đánh giá (evaluation network)
+ và mạng mục tiêu (target network) để cải tiến quá trình học và tối ưu hóa
+ hàm giá trị hành động Q.
+ Mạng đánh giá là một mạng nơ-ron được sử dụng để dự đoán giá trị hành động
+ Q(st, at) tại một trạng thái cụ thể st và hành động at.
+ Mạng này sử dụng các tham số θ để tính toán giá trị Q cho các cặp trạng
+ thái-hành động.
+ Trong quá trình huấn luyện, các tham số của mạng đánh giá được cập nhật
+ theo một thuật toán tối ưu hóa như Stochastic Gradient Descent (SGD), để
+ cải thiện khả năng dự đoán giá trị hành động Q.
+ Mạng mục tiêu là một phiên bản khác của mạng đánh giá và được sử dụng để
+ dự đoán giá trị Q của trạng thái tiếp theo st+1 và hành động tiếp theo
+ at+1.
+ Tham số của mạng mục tiêu được ký hiệu là θ-, và nó được cập nhật sau một
+ khoảng thời gian nhất định, không phải sau mỗi lần lặp như mạng đánh giá.
+ Kỹ thuật này giúp giảm vấn đề tương quan giữa giá trị Q và giá trị mục
+ tiêu Q, giúp thuật toán hội tụ tốt hơn và ổn định hơn trong quá trình huấn
+ luyện.
+\end_layout
+
+\begin_layout Standard
+Cách thực hiện cải tiến thuật toán cho mô hình vấn đề như sau:
+\end_layout
+
+\begin_layout Standard
+Bước 1: Khởi tạo các thông số và siêu tham số như tập trạng thái S, tập
+ hành động A, hệ số giảm dần 𝛾, tỷ lệ học 𝛼, số lượng bước thực hiện (epochs),
+ kích thước của bộ nhớ trạng thái (memory buffer), kích thước batch khi
+ huấn luyện mạng (batch size), và tần suất cập nhật mạng target (target
+ update frequency).
+\end_layout
+
+\begin_layout Standard
+Bước 2: Khởi tạo mạng nơ-ron evaluation và mạng nơ-ron target với cùng cấu
+ trúc và trọng số ngẫu nhiên.
+\end_layout
+
+\begin_layout Standard
+Bước 3: Khi nhận được yêu cầu ánh xạ chuỗi dịch vụ (SFC), kiểm tra xem tổng
+ số tài nguyên yêu cầu của mỗi chuỗi SFC (số lượng VNFs) có vượt quá tổng
+ số tài nguyên còn lại của các nút vật lý trong mạng vật lý hiện tại hay
+ không.
+ Nếu vượt quá, từ chối yêu cầu và kết thúc.
+\end_layout
+
+\begin_layout Standard
+Bước 4: Ánh xạ nút đầu tiên của chuỗi dịch vụ vào nút vật lý có tải hiện
+ tại nhỏ nhất để đảm bảo cân bằng tải trong hệ thống.
+ Nếu có nhiều nút với cùng tải nhỏ nhất, chọn một nút ngẫu nhiên.
+\end_layout
+
+\begin_layout Standard
+Bước 5: Đối với các VNF tiếp theo trong chuỗi dịch vụ, tạo một số ngẫu nhiên
+ a trong khoảng từ 0 đến 1.
+ Nếu a nhỏ hơn một ngưỡng xác định, chọn ngẫu nhiên một nút vật lý từ danh
+ sách có sẵn để ánh xạ VNF, ngược lại, tính toán giá trị Q của tất cả hành
+ động bằng mạng evaluation và chọn hành động tốt nhất (nút vật lý) để ánh
+ xạ VNF.
+\end_layout
+
+\begin_layout Standard
+Bước 6: Đặt VNF vào nút vật lý được chọn và tính toán giá trị phản hồi R
+ dựa trên tình trạng tài nguyên mạng vật lý hiện tại, chất lượng dịch vụ
+ (QoS) và công thức xác định giá trị phản hồi.
+\end_layout
+
+\begin_layout Standard
+Bước 7: Lưu trạng thái S hiện tại, hành động A được chọn, giá trị phản hồi
+ R và trạng thái tiếp theo S' vào bộ nhớ trạng thái (memory buffer).
+\end_layout
+
+\begin_layout Standard
+Bước 8: Tiến hành huấn luyện mạng evaluation bằng cách lấy một lô (batch)
+ dữ liệu từ bộ nhớ trạng thái và cập nhật trọng số của mạng nơ-ron evaluation
+ để cải thiện dự đoán giá trị Q cho các trạng thái và hành động.
+\end_layout
+
+\begin_layout Standard
+Bước 9: Sau mỗi số lượng bước nhất định (target update frequency), cập nhật
+ trọng số của mạng nơ-ron target bằng cách sao chép các trọng số từ mạng
+ evaluation.
+\end_layout
+
+\begin_layout Standard
+Bước 10: Lặp lại Bước 4 đến Bước 9 cho tất cả các chuỗi dịch vụ cần ánh
+ xạ.
+\end_layout
+
+\begin_layout Standard
+Bước 11: Kết thúc quá trình ánh xạ cho các chuỗi dịch vụ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sơ đồ thuật toán deep Q-learning trong triển khai mô phỏng
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../../../Report/image/deep-q-learning-flowchart.jpg
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Đ
+\end_layout
+
+\begin_layout Section
+Thảo luận và phân tích kết quả.
+\end_layout
+
+\begin_layout Section
+Tổng kết và hướng phát triển.
+\end_layout
+
+\begin_layout Section
+Tài liệu tham khảo.
+\end_layout
+
+\end_body
+\end_document
